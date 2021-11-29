@@ -1,0 +1,41 @@
+# i18n_es.messages
+#
+# Copyright (C) 2012-2021 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+anonymous.shout.form.label.author = Autor:
+anonymous.shout.form.label.text = Texto:
+anonymous.shout.form.label.text = Información:
+
+anonymous.prate = Prate
+
+anonymous.prate.form.label.marker = Marcador:
+anonymous.prate.form.label.deadline = Fecha límite:
+anonymous.prate.form.label.budget = Presupuesto:
+anonymous.prate.form.label.important = ¿Es importante?:
+
+anonymous.shout.form.button.create = Gritar
+anonymous.shout.form.button.return = Volver
+ 
+anonymous.shout.list.label.moment = Momento
+anonymous.shout.list.label.author = Autor
+anonymous.shout.list.label.text = Texto
+anonymous.shout.list.label.prate = Prate
+
+anonymous.shout.form.error.spam = Se ha detectado spam en el texto introducido
+anonymous.prate.form.error.budget-currency = Solo podemos aceptar 'USD', 'EUR' o 'GBP' como símbolos válidos
+anonymous.prate.form.error.budget-positive = Solo se aceptan cantidades positivas de presupuesto
+anonymous.prate.form.error.budget-null = El campo de dinero no debe de estar vacío
+
+anonymous.shout.form.error.info-blank = Info no debe estar en blanco
+anonymous.prate.form.error.marker-blank = El marcador no debe estar vacío
+anonymous.prate.form.error.marker-duplicated = El marcador debe ser único
+anonymous.prate.form.error.marker-regex = El marcador debe ser: cuatro números (indicando el año y el mes), una barra, dos números (indicando el día), un guión y cinco números aleatorios (por favor, introduzcalos de forma que el marcador sea único)
+anonymous.prate.form.error.deadline-null = La fecha límite no debe estar vacía
+anonymous.prate.form.error.deadline-week = La fecha límite debe ser al menos con una semana después de ahora
+anonymous.prate.form.error.marker-date = La fecha del patrón no es la actual

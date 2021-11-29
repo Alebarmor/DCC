@@ -1,0 +1,4 @@
+timestamp,test-class,test-method,time,description,result
+2021-09-10 12:11:14.746,acme.testing.anonymous.shout.AnonymousShoutListTest,listAll,1771,"[1] recordIndex=0, moment=2021/09/01 19:39, author=John Doe, text=I'm happy!, title=2109/05-12345",OK
+2021-09-10 12:11:16.74,acme.testing.anonymous.shout.AnonymousShoutListTest,listAll,1737,"[2] recordIndex=1, moment=2021/09/01 15:55, author=Jane Doe, text=I'm the master of my room!, title=2109/05-12346",OK
+2021-09-10 12:11:18.759,acme.testing.anonymous.shout.AnonymousShoutListTest,listAll,1743,"[3] recordIndex=2, moment=2021/09/01 00:00, author=Foo Bar, text=Just turning 50!, title=2109/05-12347",OK

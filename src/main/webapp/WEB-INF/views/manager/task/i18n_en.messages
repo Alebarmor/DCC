@@ -1,0 +1,36 @@
+# i18n_en.messages
+#
+# Copyright (C) 2012-2021 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+manager.task.form.label.title = Title:
+manager.task.form.label.startTime = Start moment:
+manager.task.form.label.endTime = End moment:
+manager.task.form.label.workload = Workload (in hours):
+manager.task.form.label.description = Description:
+manager.task.form.label.info = Additional information:
+manager.task.form.label.isPublic = Do you want the task to be public? 
+
+manager.task.form.button.update = Update
+manager.task.form.button.delete = Delete
+manager.task.form.button.create = Create
+manager.task.form.button.return = Return
+
+manager.task.form.error.isBefore = The end time must be after the start time
+manager.task.form.error.workload = The workload cannot exceed the execution period
+manager.task.form.error.workload.decimal = The decimal part of the workload must be less than 60 minutes
+manager.task.form.error.spam = Spam has been detected on text above
+manager.task.form.error.datePattern = Wrong date pattern
+
+manager.task.list.label.title = Title
+manager.task.list.label.startTime = Start moment
+manager.task.list.label.endTime = End moment
+manager.task.list.label.workload = Workload (in hours)
+
+manager.task.form.placeholder.title = Go to supermarket
+manager.task.form.placeholder.description = Buy sandwiches and apples

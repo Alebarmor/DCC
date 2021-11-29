@@ -1,0 +1,38 @@
+# i18n_es.messages
+#
+# Copyright (C) 2012-2021 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+manager.task.form.label.title = Título:
+manager.task.form.label.startTime = Momento de inicio:
+manager.task.form.label.endTime = Momento de fin:
+manager.task.form.label.workload = Carga de trabajo (en horas):
+manager.task.form.label.description = Descripción:
+manager.task.form.label.info = Información adicional:
+
+manager.task.form.label.isPublic = ¿Quieres que la task sea publica? 
+
+manager.task.form.button.update = Actualizar
+manager.task.form.button.delete= Borrar
+manager.task.form.button.create = Crear
+manager.task.form.button.return = Volver
+
+manager.task.form.error.isBefore = La fecha de finalizacion debe ser posterior a la fecha de inicio 
+manager.task.form.error.workload = La carga de trabajo no puede superar el periodo de ejecucion
+çmanager.task.form.error.workload.decimal = La parte decimal de la carga de trabajo debe ser menor a 60 minutos
+manager.task.form.error.spam = Se ha detectado spam en el texto introducido
+manager.task.form.error.datePattern = El patrón introducido es incorrecto
+
+manager.task.list.label.title = Título
+manager.task.list.label.startTime = Momento de inicio
+manager.task.list.label.endTime = Momento de fin
+manager.task.list.label.workload = Carga de trabajo (en horas)
+
+manager.task.form.placeholder.title = Ir al mercadona
+manager.task.form.placeholder.description = Comprar papel de cocina y huevos
+manager.task.form.placeholder.workload = 0.00

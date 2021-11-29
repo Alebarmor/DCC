@@ -1,0 +1,43 @@
+# i18n_en.messages
+#
+# Copyright (C) 2012-2021 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+administrator.dashboard.form.title.show = Dashboard
+
+administrator.dashboard.form.title.general-indicators = General indicators
+administrator.dashboard.form.label.average-number-jobs-employer =  Average number of jobs per employer
+administrator.dashboard.form.label.average-number-applications-worker =  Average number of applications per worker
+administrator.dashboard.form.label.average-number-applications-employer = Average number of applications per employer
+
+administrator.dashboard.form.label.total-number-task-public = Number of public tasks
+administrator.dashboard.form.label.total-number-task-private = Number of private tasks
+administrator.dashboard.form.label.total-number-task-finished = Number of finished tasks
+administrator.dashboard.form.label.total-number-task-unfinished = Number of unfinished tasks
+
+administrator.dashboard.form.label.average-workload = Average workload (in hours)
+administrator.dashboard.form.label.deviation-workload = Standard deviation workload (in hours)
+administrator.dashboard.form.label.maximum-workload = Maximum workload (in hours)
+administrator.dashboard.form.label.minimum-workload = Minimum workload (in hours)
+
+administrator.dashboard.form.label.average-execution-period = Average execution period (in days)
+administrator.dashboard.form.label.deviation-execution-period = Standard deviation execution period (in days)
+administrator.dashboard.form.label.maximum-execution-period = Maximum execution period (in days)
+administrator.dashboard.form.label.minimum-execution-period = Minimum execution period (in days)
+
+administrator.dashboard.form.label.ratio-shout-marked = Ratio of shouts marked as important
+administrator.dashboard.form.label.ratio-shout-zero = Ratio of shouts whose budget is zero
+administrator.dashboard.form.label.average-by-dollars = Average by dollars (shouts)
+administrator.dashboard.form.label.average-by-euros = Average by euros (shouts)
+administrator.dashboard.form.label.average-by-pounds = Average by pounds (shouts)
+administrator.dashboard.form.label.deviation-by-dollars = Standard deviation by dollars (shouts)
+administrator.dashboard.form.label.deviation-by-euros = Standard deviation by euros (shouts)
+administrator.dashboard.form.label.deviation-by-pounds = Standard deviation by pounds (shouts)
+
+administrator.dashboard.form.title.application-statuses = Application statuses
+

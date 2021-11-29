@@ -1,0 +1,6 @@
+timestamp,test-class,test-method,time,description,result
+2021-09-10 10:44:05.957,acme.testing.anonymous.shout.AnonymousShoutCreateTest,createNegative,2601,"[1] recordIndex=0, author=null, text=Draco dormiens nunquam titillandus, info=https://www.oracle.com/es/index.html, deadline=2021/10/03 00:00, budget=EUR 21.92",OK
+2021-09-10 10:44:08.565,acme.testing.anonymous.shout.AnonymousShoutCreateTest,createNegative,2361,"[2] recordIndex=1, author=Albus Dumbledore, text=null, info=https://www.oracle.com/es/index.html, deadline=2021/10/03 00:00, budget=EUR 21.92",OK
+2021-09-10 10:44:11.15,acme.testing.anonymous.shout.AnonymousShoutCreateTest,createNegative,2333,"[3] recordIndex=2, author=Albus Dumbledore, text=Draco dormiens nunquam titillandus, info=https://www.oracle.com/es/index.html, deadline=null, budget=EUR 21.92",OK
+2021-09-10 10:44:13.812,acme.testing.anonymous.shout.AnonymousShoutCreateTest,createNegative,2367,"[4] recordIndex=3, author=Albus Dumbledore, text=Draco dormiens nunquam titillandus, info=https://www.oracle.com/es/index.html, deadline=2021/10/03 00:00, budget=null",OK
+2021-09-10 10:44:16.429,acme.testing.anonymous.shout.AnonymousShoutCreateTest,createNegative,2366,"[5] recordIndex=4, author=Alb, text=Draco dormiens nunquam titillandus, info=https://www.oracle.com/es/index.html, deadline=2021/10/03 00:00, budget=EUR 21.92",OK
