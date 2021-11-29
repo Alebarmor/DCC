@@ -22,10 +22,10 @@ public class AnonymousShoutCreateTest extends AcmeOneTest {
 		super.fillInputBoxIn("author", author);
 		super.fillInputBoxIn("text", text);
 		super.fillInputBoxIn("info", info);
-		super.fillInputBoxIn("marker", marker);
-		super.fillInputBoxIn("deadline", deadline);
-		super.fillInputBoxIn("budget", budget);
-		super.fillInputBoxIn("important", "true");
+		super.fillInputBoxIn("prate.marker", marker);
+		super.fillInputBoxIn("prate.deadline", deadline);
+		super.fillInputBoxIn("prate.budget", budget);
+		super.fillInputBoxIn("prate.important", "true");
 		
 		super.clickOnSubmitButton("Shout!");
 		
@@ -62,10 +62,10 @@ public class AnonymousShoutCreateTest extends AcmeOneTest {
 		super.fillInputBoxIn("author", author);
 		super.fillInputBoxIn("text", text);
 		super.fillInputBoxIn("info", info);
-		super.fillInputBoxIn("marker", marker);
-		super.fillInputBoxIn("deadline", deadline);
-		super.fillInputBoxIn("budget", budget);
-		super.fillInputBoxIn("important", "true");
+		super.fillInputBoxIn("prate.marker", marker);
+		super.fillInputBoxIn("prate.deadline", deadline);
+		super.fillInputBoxIn("prate.budget", budget);
+		super.fillInputBoxIn("prate.important", "true");
 		
 		super.clickOnSubmitButton("Shout!");
 		
@@ -102,10 +102,10 @@ public class AnonymousShoutCreateTest extends AcmeOneTest {
 		super.fillInputBoxIn("author", author);
 		super.fillInputBoxIn("text", text);
 		super.fillInputBoxIn("info", info);
-		super.fillInputBoxIn("marker", marker);
-		super.fillInputBoxIn("deadline", deadline);
-		super.fillInputBoxIn("budget", budget);
-		super.fillInputBoxIn("important", "true");
+		super.fillInputBoxIn("prate.marker", marker);
+		super.fillInputBoxIn("prate.deadline", deadline);
+		super.fillInputBoxIn("prate.budget", budget);
+		super.fillInputBoxIn("prate.important", "true");
 		
 		super.clickOnSubmitButton("Shout!");
 		
