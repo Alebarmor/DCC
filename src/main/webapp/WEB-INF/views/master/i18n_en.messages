@@ -33,13 +33,13 @@ master.menu.anonymous = Anonymous
 master.menu.anonymous.all-jobs = List all jobs
 master.menu.anonymous.list-shouts = List shouts
 master.menu.anonymous.create-shout = Shout!
-master.menu.anonymous.list-task = Task list
+master.menu.anonymous.list-duty = Duty list
 
 # master.menu.authenticated #######################################################
 
 master.menu.authenticated = Authenticated
 master.menu.authenticated.announcement.list = List announcements
-master.menu.authenticated.task.list = Task list
+master.menu.authenticated.duty.list = Duty list
 master.menu.authenticated.money-exchange = Money exchange
 
 # master.menu.administrator ###################################################
@@ -55,11 +55,11 @@ master.menu.administrator.populate-initial = Populate DB (initial)
 master.menu.administrator.populate-sample = Populate DB (samples)
 master.menu.administrator.shutdown = Shut down
 
-# master.menu.manager ########################################################
+# master.menu.officer ########################################################
 
-master.menu.manager = Manager
-master.menu.manager.task.list = List all my tasks
-master.menu.manager.task.create = Create task
+master.menu.officer = Officer
+master.menu.officer.duty.list = List all my duties
+master.menu.officer.duty.create = Create duty
 
 # master.menu.employer ########################################################
 
@@ -83,8 +83,8 @@ master.menu.user-account.employer = Employer data
 master.menu.user-account.become-employer = Become an employer
 master.menu.user-account.worker = Worker data
 master.menu.user-account.become-worker = Become a worker
-master.menu.user-account.manager = Manager data
-master.menu.user-account.become-manager = Become a manager
+master.menu.user-account.officer = Officer data
+master.menu.user-account.become-officer = Become an officer
 
 # master.footer ###############################################################
 

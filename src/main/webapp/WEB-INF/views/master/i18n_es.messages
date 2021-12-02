@@ -33,13 +33,13 @@ master.menu.anonymous = Anónimo
 master.menu.anonymous.all-jobs = Ver todos los trabajos
 master.menu.anonymous.list-shouts = Ver gritos
 master.menu.anonymous.create-shout = ¡Dar un grito!
-master.menu.anonymous.list-task = Lista de tareas
+master.menu.anonymous.list-duty = Lista de deberes
 
 # master.menu.authenticated #######################################################
 
 master.menu.authenticated = Autentificado
 master.menu.authenticated.announcement.list = Ver anuncios
-master.menu.authenticated.task.list = Lista de tareas
+master.menu.authenticated.duty.list = Lista de deberes
 master.menu.authenticated.money-exchange = Cambio de dinero
 
 # master.menu.administrator ###################################################
@@ -55,11 +55,11 @@ master.menu.administrator.populate-initial = Poblar BD (inicial)
 master.menu.administrator.populate-sample = Poblar BD (ejemplos)
 master.menu.administrator.shutdown = Parar el sistema
 
-# master.menu.manager ########################################################
+# master.menu.officer ########################################################
 
-master.menu.manager = Gerente
-master.menu.manager.task.list = Lista de tareas
-master.menu.manager.task.create = Crear tarea
+master.menu.officer = Oficial
+master.menu.officer.duty.list = Lista de deberes
+master.menu.officer.duty.create = Crear deber
 
 # master.menu.employer ########################################################
 
@@ -83,8 +83,8 @@ master.menu.user-account.employer = Datos de empleado
 master.menu.user-account.become-employer = Hazte empleador
 master.menu.user-account.worker = Datos de trabajador
 master.menu.user-account.become-worker = Hazte trabajador
-master.menu.user-account.manager = Datos de manager
-master.menu.user-account.become-manager = Hazte manager
+master.menu.user-account.officer = Datos de oficial
+master.menu.user-account.become-officer = Hazte oficial
 
 ﻿# master.footer ###############################################################
 

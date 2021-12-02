@@ -27,5 +27,5 @@
 		code="administrator.configuration.form.button.update"
 		action="update"/>
 		
-	<acme:form-return code="anonymous.task.form.button.return"/>
+	<acme:form-return code="anonymous.duty.form.button.return"/>
 </acme:form>

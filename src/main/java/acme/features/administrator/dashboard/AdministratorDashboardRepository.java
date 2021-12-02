@@ -17,7 +17,7 @@ import java.util.Collection;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import acme.entities.tasks.Task;
+import acme.entities.duties.Duty;
 import acme.entities.prates.Prate;
 import acme.framework.repositories.AbstractRepository;
 
@@ -56,21 +56,21 @@ public interface AdministratorDashboardRepository extends AbstractRepository {
 	@Query("select s from Prate s")
 	Collection<Prate> findPrates();
 			
-	// ------------------------------------------------- Task --------------------------------------------------------------------------
+	// ------------------------------------------------- Duty --------------------------------------------------------------------------
 	
-	@Query("select count(t) from Task t where t.isPublic = true")
-	Integer numberOfTasksPublic();
+	@Query("select count(t) from Duty t where t.isPublic = true")
+	Integer numberOfDutiesPublic();
 		
-	@Query("select count(t) from Task t where t.isPublic = false")
-	Integer numberOfTasksPrivate();
+	@Query("select count(t) from Duty t where t.isPublic = false")
+	Integer numberOfDutiesPrivate();
 		
-	@Query("select count(t) from Task t where t.endTime < CURRENT_TIMESTAMP")
-	Integer numberOfTasksFinished();
+	@Query("select count(t) from Duty t where t.endTime < CURRENT_TIMESTAMP")
+	Integer numberOfDutiesFinished();
 		
-	@Query("select count(t) from Task t where t.endTime > CURRENT_TIMESTAMP")
-	Integer numberOfTasksUnfinished();
+	@Query("select count(t) from Duty t where t.endTime > CURRENT_TIMESTAMP")
+	Integer numberOfDutiesUnfinished();
 		
-	@Query("select t from Task t")
-	Collection<Task> findMany();
+	@Query("select t from Duty t")
+	Collection<Duty> findMany();
 
 }
