@@ -35,7 +35,7 @@
 		<th scope="row"><acme:message
 				code="administrator.dashboard.form.label.ratio-shout-zero" />
 		</th>
-		<td><acme:print value="${ratioShoutZeroBudget}" /></td>
+		<td><acme:print value="${ratioShoutZeroXx4}" /></td>
 	</tr>
 	<tr>
 		<th scope="row"><acme:message

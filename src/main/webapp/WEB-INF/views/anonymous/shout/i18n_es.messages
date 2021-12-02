@@ -12,12 +12,12 @@ anonymous.shout.form.label.author = Autor:
 anonymous.shout.form.label.text = Texto:
 anonymous.shout.form.label.text = Información:
 
-anonymous.prate = Prate
+anonymous.xx1 = Xx1
 
-anonymous.prate.form.label.marker = Marcador:
-anonymous.prate.form.label.deadline = Fecha límite:
-anonymous.prate.form.label.budget = Presupuesto:
-anonymous.prate.form.label.important = ¿Es importante?:
+anonymous.xx1.form.label.xx2 = Xe2:
+anonymous.xx1.form.label.xx3 = Xe3:
+anonymous.xx1.form.label.xx4 = Xe4:
+anonymous.xx1.form.label.xx5 = ¿No es importante?:
 
 anonymous.shout.form.button.create = Gritar
 anonymous.shout.form.button.return = Volver
@@ -25,17 +25,17 @@ anonymous.shout.form.button.return = Volver
 anonymous.shout.list.label.moment = Momento
 anonymous.shout.list.label.author = Autor
 anonymous.shout.list.label.text = Texto
-anonymous.shout.list.label.prate = Prate
+anonymous.shout.list.label.xx1 = Xx1
 
 anonymous.shout.form.error.spam = Se ha detectado spam en el texto introducido
-anonymous.prate.form.error.budget-currency = Solo podemos aceptar 'USD', 'EUR' o 'GBP' como símbolos válidos
-anonymous.prate.form.error.budget-positive = Solo se aceptan cantidades positivas de presupuesto
-anonymous.prate.form.error.budget-null = El campo de dinero no debe de estar vacío
+anonymous.xx1.form.error.xx4-currency = Solo podemos aceptar 'Xxa', 'Xxb' o 'Xxc' como símbolos válidos
+anonymous.xx1.form.error.xx4-positive = Solo se aceptan cantidades positivas de xe4
+anonymous.xx1.form.error.xx4-null = El campo de xe4 no debe de estar vacío
 
 anonymous.shout.form.error.info-blank = Info no debe estar en blanco
-anonymous.prate.form.error.marker-blank = El marcador no debe estar vacío
-anonymous.prate.form.error.marker-duplicated = El marcador debe ser único
-anonymous.prate.form.error.marker-regex = El marcador debe ser: cuatro números (indicando el año y el mes), una barra, dos números (indicando el día), un guión y cinco números aleatorios (por favor, introduzcalos de forma que el marcador sea único)
-anonymous.prate.form.error.deadline-null = La fecha límite no debe estar vacía
-anonymous.prate.form.error.deadline-week = La fecha límite debe ser al menos con una semana después de ahora
-anonymous.prate.form.error.marker-date = La fecha del patrón no es la actual
+anonymous.xx1.form.error.xx2-blank = El xe2 no debe estar vacío
+anonymous.xx1.form.error.xx2-duplicated = El xe2 debe ser único
+anonymous.xx1.form.error.xx2-regex = El xe2 debe cumplir el siguiente patrón: XXP; donde las w's representan letras (entre x y y letras de forma que el xe2 sea único), las y's denotas el año actual, las m's el mes actual y las d's el día actual
+anonymous.xx1.form.error.xx3-null = La xe3 no debe estar vacía
+anonymous.xx1.form.error.xx3-week = La xe3 debe ser al menos con una semana después de ahora
+anonymous.xx1.form.error.xx2-date = La fecha del patrón no es la actual

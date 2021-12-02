@@ -26,8 +26,8 @@
 		<property name="author" value="John Doe"/>
 		<property name="text" value="I'm happy!"/>
 		<property name="info"><null/></property>	
-		<property name="prate">
-			<ref bean="prate01"/>
+		<property name="xx1">
+			<ref bean="xx101"/>
 		</property>
 	</bean>
 	
@@ -36,8 +36,8 @@
 		<property name="author" value="Jane Doe"/>
 		<property name="text" value="I'm the master of my room!"/>
 		<property name="info" value="http://www.example.org"/>
-		<property name="prate">
-			<ref bean="prate02"/>
+		<property name="xx1">
+			<ref bean="xx102"/>
 		</property>	
 	</bean>
 	
@@ -46,8 +46,8 @@
 		<property name="author" value="Foo Bar"/>
 		<property name="text" value="Just turning 50!"/>
 		<property name="info" value="http://happybirthday.com"/>
-		<property name="prate">
-			<ref bean="prate03"/>
+		<property name="xx1">
+			<ref bean="xx103"/>
 		</property>		
 	</bean>
 	
@@ -56,48 +56,48 @@
 		<property name="text" value="Woa! This app's so cool!"/>
 		<property name="moment" value="2021/02/13 12:30"/>
 		<property name="info" value="http://www.sample-app.com"/>
-		<property name="prate">
-			<ref bean="prate04"/>
+		<property name="xx1">
+			<ref bean="xx104"/>
 		</property>
 	</bean>
 	
-	<!-- Prates -->
+	<!-- Xx1s -->
 	
-	<bean id="prate01" class="acme.entities.prates.Prate">
-		<property name="marker" value="2111/28-12345"/>
-		<property name="deadline" value="2021/11/28 12:30"/>
-		<property name="budget" value="EUR 19.2"/>
-		<property name="important" value="true"/>
+	<bean id="xx101" class="acme.entities.xx1s.Xx1">
+		<property name="xx2" value="2111/28-12345"/>
+		<property name="xx3" value="2021/11/28 12:30"/>
+		<property name="xx4" value="EUR 19.2"/>
+		<property name="xx5" value="true"/>
 		<property name="shout">
 			<ref bean="shout01"/>
 		</property>
 	</bean>
 	
-	<bean id="prate02" class="acme.entities.prates.Prate">
-		<property name="marker" value="2111/28-12346"/>
-		<property name="deadline" value="2021/11/28 00:30"/>
-		<property name="budget" value="GBP 69.69"/>
-		<property name="important" value="false"/>
+	<bean id="xx102" class="acme.entities.xx1s.Xx1">
+		<property name="xx2" value="2111/28-12346"/>
+		<property name="xx3" value="2021/11/28 00:30"/>
+		<property name="xx4" value="GBP 69.69"/>
+		<property name="xx5" value="false"/>
 		<property name="shout">
 			<ref bean="shout02"/>
 		</property>
 	</bean>
 	
-	<bean id="prate03" class="acme.entities.prates.Prate">
-		<property name="marker" value="2111/28-12347"/>
-		<property name="deadline" value="2021/11/28 18:56"/>
-		<property name="budget" value="USD 80.45"/>
-		<property name="important" value="true"/>
+	<bean id="xx103" class="acme.entities.xx1s.Xx1">
+		<property name="xx2" value="2111/28-12347"/>
+		<property name="xx3" value="2021/11/28 18:56"/>
+		<property name="xx4" value="USD 80.45"/>
+		<property name="xx5" value="true"/>
 		<property name="shout">
 			<ref bean="shout03"/>
 		</property>
 	</bean>
 	
-	<bean id="prate04" class="acme.entities.prates.Prate">
-		<property name="marker" value="2102/23-12345"/>
-		<property name="deadline" value="2021/02/23 23:59"/>
-		<property name="budget" value="USD 0.0"/>
-		<property name="important" value="false"/>
+	<bean id="xx104" class="acme.entities.xx1s.Xx1">
+		<property name="xx2" value="2102/23-12345"/>
+		<property name="xx3" value="2021/02/23 23:59"/>
+		<property name="xx4" value="USD 0.0"/>
+		<property name="xx5" value="false"/>
 		<property name="shout">
 			<ref bean="shout04"/>
 		</property>

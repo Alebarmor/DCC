@@ -22,7 +22,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.duties.Duty;
-import acme.entities.prates.Prate;
+import acme.entities.xx1s.Xx1;
 import acme.forms.Dashboard;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
@@ -91,7 +91,7 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 			"averageEndeavoursWorkload",  "deviationEndeavoursWorkload",
 			"maximumEndeavoursWorkload", "minimumEndeavoursWorkload","ratioShoutMarked",
 			"averageByDollar","averageByEuro","averageByPound","deviationByDollar","deviationByEuro",
-			"deviationByPound","ratioShoutZeroBudget");
+			"deviationByPound","ratioShoutZeroXx4");
 	}
 
 	@Override
@@ -121,10 +121,10 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		result.setRatioOfAcceptedApplications(ratioOfAcceptedApplications);
 		result.setRatioOfRejectedApplications(ratioOfRejectedApplications);
 		
-		// ------------------- Prate -----------------------
+		// ------------------- Xx1 -----------------------
 
 		final Double ratioShoutMarked;
-		final Double ratioShoutZeroBudget;
+		final Double ratioShoutZeroXx4;
 		final Double averageByDollar;
 		final Double averageByEuro;
 		final Double averageByPound;
@@ -132,26 +132,26 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		final Double deviationByEuro;
 		final Double deviationByPound;
 		
-		ratioShoutMarked = (double)this.repository.numberOfPratesTrue()/this.repository.numberOfPrates();
-		ratioShoutZeroBudget = (double)this.repository.numberOfPratesZeroBudget()/this.repository.numberOfPrates();
+		ratioShoutMarked = (double)(1.0 - this.repository.numberOfXx1sTrue()/this.repository.numberOfXx1s());
+		ratioShoutZeroXx4 = (double)this.repository.numberOfXx1sZeroXx4()/this.repository.numberOfXx1s();
 		double euros=.0;
 		int nEuros=0;
 		double dollars=.0;
 		int nDollars = 0; 
 		double pounds=.0;
 		int nPounds = 0; 
-		for(final Prate s : this.repository.findPrates()) {
-			if(s.getBudget().getCurrency().equals("USD")) {
+		for(final Xx1 s : this.repository.findXx1s()) {
+			if(s.getXx4().getCurrency().equals("USD")) {
 				nDollars++;
-				dollars=dollars+s.getBudget().getAmount();
+				dollars=dollars+s.getXx4().getAmount();
 			}
-			if(s.getBudget().getCurrency().equals("EUR")) {
+			if(s.getXx4().getCurrency().equals("EUR")) {
 				nEuros++;
-				euros=euros+s.getBudget().getAmount();
+				euros=euros+s.getXx4().getAmount();
 			}
-			if(s.getBudget().getCurrency().equals("GBP")) {
+			if(s.getXx4().getCurrency().equals("GBP")) {
 				nPounds++;
-				pounds=pounds+s.getBudget().getAmount();
+				pounds=pounds+s.getXx4().getAmount();
 			}
 		}
 		averageByDollar = dollars/nDollars;
@@ -161,15 +161,15 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		Double stddevDollar=.0;
 		Double stddevEuro=.0;
 		Double stddevPound=.0;
-		for(final Prate s : this.repository.findPrates()) {
-			if(s.getBudget().getCurrency().equals("USD")) {
-				stddevDollar += Math.pow(s.getBudget().getAmount() - averageByDollar, 2);
+		for(final Xx1 s : this.repository.findXx1s()) {
+			if(s.getXx4().getCurrency().equals("USD")) {
+				stddevDollar += Math.pow(s.getXx4().getAmount() - averageByDollar, 2);
 			}
-			if(s.getBudget().getCurrency().equals("EUR")) {
-				stddevEuro += Math.pow(s.getBudget().getAmount() - averageByEuro, 2);
+			if(s.getXx4().getCurrency().equals("EUR")) {
+				stddevEuro += Math.pow(s.getXx4().getAmount() - averageByEuro, 2);
 			}
-			if(s.getBudget().getCurrency().equals("GBP")) {
-				stddevPound += Math.pow(s.getBudget().getAmount() - averageByPound, 2);
+			if(s.getXx4().getCurrency().equals("GBP")) {
+				stddevPound += Math.pow(s.getXx4().getAmount() - averageByPound, 2);
 			}
 		}
 		
@@ -178,7 +178,7 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		deviationByPound = Math.sqrt(stddevPound/nPounds);
 		
 		result.setRatioShoutMarked(ratioShoutMarked);
-		result.setRatioShoutZeroBudget(ratioShoutZeroBudget);
+		result.setRatioShoutZeroXx4(ratioShoutZeroXx4);
 		result.setAverageByDollar(averageByDollar);
 		result.setAverageByEuro(averageByEuro);
 		result.setAverageByPound(averageByPound);

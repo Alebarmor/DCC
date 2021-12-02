@@ -66,10 +66,10 @@ public class Dashboard implements Serializable {
 	Double						maximumEndeavoursExecutionPeriod;
 	Double						minimumEndeavoursExecutionPeriod;
 	
-	// Prate
+	// Xx1
 
 	Double 						ratioShoutMarked;
-	Double						ratioShoutZeroBudget;
+	Double						ratioShoutZeroXx4;
 	Double 						averageByDollar;
 	Double 						averageByEuro;
 	Double 						averageByPound;

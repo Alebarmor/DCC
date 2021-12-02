@@ -16,7 +16,7 @@ public class AdministratorDashboardShowTest extends AcmeOneTest{
 	@ParameterizedTest
 	@CsvFileSource(resources = "/administrator/dashboard/show.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
-	public void show(final String ratioShoutMarked, final String ratioShoutZeroBudget, 
+	public void show(final String ratioShoutMarked, final String ratioShoutZeroXx4, 
 		final String averageByDollar, final String averageByEuro, final String averageByPound,
 		final String deviationByDollar, final String deviationByEuro, final String deviationByPound,
 		final String averageNumberOfJobsPerEmployer,final String averageNumberOfApplicationsPerWorker,//
@@ -29,7 +29,7 @@ public class AdministratorDashboardShowTest extends AcmeOneTest{
 		@SuppressWarnings("unchecked")
 		final List<String> csvList = new ArrayList<>();
 		csvList.add(ratioShoutMarked);
-		csvList.add(ratioShoutZeroBudget);
+		csvList.add(ratioShoutZeroXx4);
 		csvList.add(averageByDollar);
 		csvList.add(averageByEuro);
 		csvList.add(averageByPound);

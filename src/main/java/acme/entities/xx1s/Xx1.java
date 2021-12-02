@@ -1,4 +1,4 @@
-package acme.entities.prates;
+package acme.entities.xx1s;
 
 import java.time.LocalDate;
 import java.util.Calendar;
@@ -22,7 +22,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Prate extends DomainEntity {
+public class Xx1 extends DomainEntity {
 	
 	// Serialisation identifier -----------------------------------------------
 
@@ -33,21 +33,21 @@ public class Prate extends DomainEntity {
 	//XXP
 	@Pattern(regexp = "^([0-9]{2}[0-1][0-9])/([0-3][0-9])-\\d{5}$")
 	@NotBlank
-	protected String				marker;
+	protected String				xx2;
 	
 	@Temporal(TemporalType.TIMESTAMP)
 	@NotNull
-	protected Date					deadline;
+	protected Date					xx3;
 	
 	@Valid
 	@NotNull
-	protected Money 				budget;
+	protected Money 				xx4;
 	
 	@NotNull
-	protected Boolean 				important;
+	protected Boolean 				xx5;
 	
-	public void setImportant(final Boolean a) {
-		this.important = a;
+	public void setXx5(final Boolean a) {
+		this.xx5 = a;
 	}
 	
 	// Derived attributes -----------------------------------------------------
@@ -55,7 +55,7 @@ public class Prate extends DomainEntity {
 	// Relationships ----------------------------------------------------------
 	
 	@Valid
-	@OneToOne(optional = false, mappedBy = "prate")
+	@OneToOne(optional = false, mappedBy = "xx1")
 	protected Shout shout;
 	
 	@Override
@@ -63,14 +63,14 @@ public class Prate extends DomainEntity {
 		StringBuilder result;
 
 		result = new StringBuilder();
-		result.append(this.marker);
+		result.append(this.xx2);
 
 		return result.toString();
 	}
 	
-	public Boolean isMarkerCurrent() {
+	public Boolean isXx2Current() {
 		Boolean res = false;
-		final String[] trozos = this.marker.split("/");
+		final String[] trozos = this.xx2.split("/");
 		
 		final String currentYear = String.valueOf(Calendar.getInstance().get(Calendar.YEAR)).substring(2,4);
 		String currentMonth = String.valueOf(LocalDate.now().getMonth().getValue());

@@ -27,7 +27,7 @@ import javax.validation.constraints.Past;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
-import acme.entities.prates.Prate;
+import acme.entities.xx1s.Xx1;
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -65,11 +65,11 @@ public class Shout extends DomainEntity {
 	
 	@Valid
 	@OneToOne(optional = false)
-	protected Prate prate;
+	protected Xx1 xx1;
 	
 	@Transient
 	public String getTitle() {
-	    return this.prate.toString();
+	    return this.xx1.toString();
 	}
 
 }

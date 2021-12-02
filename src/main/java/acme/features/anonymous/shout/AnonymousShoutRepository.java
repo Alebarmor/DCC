@@ -19,7 +19,7 @@ import org.springframework.stereotype.Repository;
 
 import acme.entities.configuration.Configuration;
 import acme.entities.shouts.Shout;
-import acme.entities.prates.Prate;
+import acme.entities.xx1s.Xx1;
 import acme.framework.repositories.AbstractRepository;
 
 @Repository
@@ -28,8 +28,8 @@ public interface AnonymousShoutRepository extends AbstractRepository {
 	@Query("select s from Shout s")
 	Collection<Shout> findMany();
 	
-	@Query("select s.prate from Shout s where s.prate.marker = ?1")
-	Prate findOnePrateByMarker(String id);
+	@Query("select s.xx1 from Shout s where s.xx1.xx2 = ?1")
+	Xx1 findOneXx1ByXx2(String id);
 	
 	@Query("select c from Configuration c")
 	Collection<Configuration> getConfiguration();
