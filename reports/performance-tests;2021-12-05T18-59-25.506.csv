@@ -1,0 +1,2 @@
+timestamp,test-class,test-method,time,description,result
+2021-12-05 19:00:04.039,acme.testing.officer.duty.OfficerDutyCreateTest,createPositiveIsPublic,7224,"[1] recordIndex=4, title=Go to Mercadona, startTime=2021/11/29 11:00, endTime=2021/11/29 13:00, workload=0.50, description=Compra Huevos y jamon porfa, info=https://example.org/",Record index 4 is out of range
