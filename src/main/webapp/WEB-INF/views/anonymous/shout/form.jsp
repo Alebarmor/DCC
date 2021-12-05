@@ -20,11 +20,11 @@
 	<acme:form-textarea code="anonymous.shout.form.label.text" path="text" placeholder="Lorem ipsum!"/>
 	<acme:form-url code="anonymous.shout.form.label.info" path="info"/>
 	
-	<acme:footer-subpanel code="anonymous.prate">
-		<acme:form-textbox code="anonymous.prate.form.label.marker" path="prate.marker" placeholder="yymm/dd-12345"/>
-		<acme:form-moment code="anonymous.prate.form.label.deadline" path="prate.deadline" placeholder="2000/01/01 00:00"/>
-		<acme:form-money code="anonymous.prate.form.label.budget" path="prate.budget" placeholder="EUR/USD/GBP 31592.19"/>
-		<acme:form-checkbox code="anonymous.prate.form.label.important" path="prate.important"/>
+	<acme:footer-subpanel code="anonymous.xx1">
+		<acme:form-textbox code="anonymous.xx1.form.label.xx2" path="xx1.xx2" placeholder="XXP"/>
+		<acme:form-moment code="anonymous.xx1.form.label.xx3" path="xx1.xx3" placeholder="2000/01/01 00:00"/>
+		<acme:form-money code="anonymous.xx1.form.label.xx4" path="xx1.xx4" placeholder="Xxa/Xxb/Xxc 31592.19"/>
+		<acme:form-checkbox code="anonymous.xx1.form.label.xx5" path="xx1.xx5"/>
 	</acme:footer-subpanel>
 	
 	<acme:form-submit code="anonymous.shout.form.button.create" action="/anonymous/shout/create"/>

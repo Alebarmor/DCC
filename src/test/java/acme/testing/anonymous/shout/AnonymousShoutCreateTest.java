@@ -15,17 +15,17 @@ public class AnonymousShoutCreateTest extends AcmeOneTest {
 	@CsvFileSource(resources = "/anonymous/shout/createNegativeIdentifier.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(30)
 	public void createNegativeDate(final int recordIndex, final String author, final String text, final String info,
-		final String marker, final String deadline, final String budget) {
+		final String xx2, final String xx3, final String xx4) {
 		
 		super.clickOnMenu("Anonymous","Shout!");
 		
 		super.fillInputBoxIn("author", author);
 		super.fillInputBoxIn("text", text);
 		super.fillInputBoxIn("info", info);
-		super.fillInputBoxIn("prate.marker", marker);
-		super.fillInputBoxIn("prate.deadline", deadline);
-		super.fillInputBoxIn("prate.budget", budget);
-		super.fillInputBoxIn("prate.important", "true");
+		super.fillInputBoxIn("xx1.xx2", xx2);
+		super.fillInputBoxIn("xx1.xx3", xx3);
+		super.fillInputBoxIn("xx1.xx4", xx4);
+		super.fillInputBoxIn("xx1.xx5", "true");
 		
 		super.clickOnSubmitButton("Shout!");
 		
@@ -37,7 +37,7 @@ public class AnonymousShoutCreateTest extends AcmeOneTest {
 	@CsvFileSource(resources = "/anonymous/shout/createNegative.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
 	public void createNegative(final int recordIndex, final String author, final String text, final String info,
-		final String deadline, final String budget) {
+		final String xx3, final String xx4) {
 		
 		// ------------------------
 		
@@ -53,7 +53,7 @@ public class AnonymousShoutCreateTest extends AcmeOneTest {
 			currentDay = "0" + currentDay;
 		}
 				
-		final String marker =  currentYear + currentMonth + "/" + currentDay + "-" +"01234";
+		final String xx2 =  currentYear + currentMonth + "/" + currentDay + "-" +"01234";
 		
 		// ------------------------
 		
@@ -62,10 +62,10 @@ public class AnonymousShoutCreateTest extends AcmeOneTest {
 		super.fillInputBoxIn("author", author);
 		super.fillInputBoxIn("text", text);
 		super.fillInputBoxIn("info", info);
-		super.fillInputBoxIn("prate.marker", marker);
-		super.fillInputBoxIn("prate.deadline", deadline);
-		super.fillInputBoxIn("prate.budget", budget);
-		super.fillInputBoxIn("prate.important", "true");
+		super.fillInputBoxIn("xx1.xx2", xx2);
+		super.fillInputBoxIn("xx1.xx3", xx3);
+		super.fillInputBoxIn("xx1.xx4", xx4);
+		super.fillInputBoxIn("xx1.xx5", "true");
 		
 		super.clickOnSubmitButton("Shout!");
 		
@@ -77,7 +77,7 @@ public class AnonymousShoutCreateTest extends AcmeOneTest {
 	@CsvFileSource(resources = "/anonymous/shout/createPositive.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(20)
 	public void createPositive(final int recordIndex, final String author, final String text, final String info,
-		final String deadline, final String budget) {
+		final String xx3, final String xx4) {
 		
 		// ------------------------
 		
@@ -93,7 +93,7 @@ public class AnonymousShoutCreateTest extends AcmeOneTest {
 			currentDay = "0" + currentDay;
 		}
 		
-		final String marker =  currentYear + currentMonth + "/" + currentDay + "-" +"12345";
+		final String xx2 =  currentYear + currentMonth + "/" + currentDay + "-" +"12345";
 		
 		// ------------------------
 		
@@ -102,10 +102,10 @@ public class AnonymousShoutCreateTest extends AcmeOneTest {
 		super.fillInputBoxIn("author", author);
 		super.fillInputBoxIn("text", text);
 		super.fillInputBoxIn("info", info);
-		super.fillInputBoxIn("prate.marker", marker);
-		super.fillInputBoxIn("prate.deadline", deadline);
-		super.fillInputBoxIn("prate.budget", budget);
-		super.fillInputBoxIn("prate.important", "true");
+		super.fillInputBoxIn("xx1.xx2", xx2);
+		super.fillInputBoxIn("xx1.xx3", xx3);
+		super.fillInputBoxIn("xx1.xx4", xx4);
+		super.fillInputBoxIn("xx1.xx5", "true");
 		
 		super.clickOnSubmitButton("Shout!");
 		
@@ -113,7 +113,7 @@ public class AnonymousShoutCreateTest extends AcmeOneTest {
 		
 		super.checkColumnHasValue(3, 1, author);
 		super.checkColumnHasValue(3, 2, text);
-		super.checkColumnHasValue(3, 3, marker);
+		super.checkColumnHasValue(3, 3, xx2);
 		
 	}
 	

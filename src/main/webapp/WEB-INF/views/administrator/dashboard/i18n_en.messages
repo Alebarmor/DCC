@@ -15,10 +15,10 @@ administrator.dashboard.form.label.average-number-jobs-employer =  Average numbe
 administrator.dashboard.form.label.average-number-applications-worker =  Average number of applications per worker
 administrator.dashboard.form.label.average-number-applications-employer = Average number of applications per employer
 
-administrator.dashboard.form.label.total-number-task-public = Number of public tasks
-administrator.dashboard.form.label.total-number-task-private = Number of private tasks
-administrator.dashboard.form.label.total-number-task-finished = Number of finished tasks
-administrator.dashboard.form.label.total-number-task-unfinished = Number of unfinished tasks
+administrator.dashboard.form.label.total-number-duty-public = Number of public duties
+administrator.dashboard.form.label.total-number-duty-private = Number of private duties
+administrator.dashboard.form.label.total-number-duty-finished = Number of finished duties
+administrator.dashboard.form.label.total-number-duty-unfinished = Number of unfinished duties
 
 administrator.dashboard.form.label.average-workload = Average workload (in hours)
 administrator.dashboard.form.label.deviation-workload = Standard deviation workload (in hours)
@@ -31,13 +31,13 @@ administrator.dashboard.form.label.maximum-execution-period = Maximum execution 
 administrator.dashboard.form.label.minimum-execution-period = Minimum execution period (in days)
 
 administrator.dashboard.form.label.ratio-shout-marked = Ratio of shouts marked as important
-administrator.dashboard.form.label.ratio-shout-zero = Ratio of shouts whose budget is zero
-administrator.dashboard.form.label.average-by-dollars = Average by dollars (shouts)
-administrator.dashboard.form.label.average-by-euros = Average by euros (shouts)
-administrator.dashboard.form.label.average-by-pounds = Average by pounds (shouts)
-administrator.dashboard.form.label.deviation-by-dollars = Standard deviation by dollars (shouts)
-administrator.dashboard.form.label.deviation-by-euros = Standard deviation by euros (shouts)
-administrator.dashboard.form.label.deviation-by-pounds = Standard deviation by pounds (shouts)
+administrator.dashboard.form.label.ratio-shout-zero = Ratio of shouts whose xx4 is zero
+administrator.dashboard.form.label.average-by-Xxa = Average by Xxa (shouts)
+administrator.dashboard.form.label.average-by-Xxb = Average by Xxb (shouts)
+administrator.dashboard.form.label.average-by-Xxc = Average by Xxc (shouts)
+administrator.dashboard.form.label.deviation-by-Xxa = Standard deviation by Xxa (shouts)
+administrator.dashboard.form.label.deviation-by-Xxb = Standard deviation by Xxb (shouts)
+administrator.dashboard.form.label.deviation-by-Xxc = Standard deviation by Xxc (shouts)
 
 administrator.dashboard.form.title.application-statuses = Application statuses
 

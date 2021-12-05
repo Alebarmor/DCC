@@ -35,7 +35,7 @@
 		<th scope="row"><acme:message
 				code="administrator.dashboard.form.label.ratio-shout-zero" />
 		</th>
-		<td><acme:print value="${ratioShoutZeroBudget}" /></td>
+		<td><acme:print value="${ratioShoutZeroXx4}" /></td>
 	</tr>
 	<tr>
 		<th scope="row"><acme:message
@@ -95,27 +95,27 @@
 	</tr>
 	<tr>
 		<th scope="row"><acme:message
-				code="administrator.dashboard.form.label.total-number-task-public" />
+				code="administrator.dashboard.form.label.total-number-duty-public" />
 		</th>
-		<td><acme:print value="${numberOfTasksPublic}" /></td>
+		<td><acme:print value="${numberOfDutiesPublic}" /></td>
 	</tr>
 	<tr>
 		<th scope="row"><acme:message
-				code="administrator.dashboard.form.label.total-number-task-private" />
+				code="administrator.dashboard.form.label.total-number-duty-private" />
 		</th>
-		<td><acme:print value="${numberOfTasksPrivate}" /></td>
+		<td><acme:print value="${numberOfDutiesPrivate}" /></td>
 	</tr>
 	<tr>
 		<th scope="row"><acme:message
-				code="administrator.dashboard.form.label.total-number-task-finished" />
+				code="administrator.dashboard.form.label.total-number-duty-finished" />
 		</th>
-		<td><acme:print value="${numberOfTasksFinished}" /></td>
+		<td><acme:print value="${numberOfDutiesFinished}" /></td>
 	</tr>
 	<tr>
 		<th scope="row"><acme:message
-				code="administrator.dashboard.form.label.total-number-task-unfinished" />
+				code="administrator.dashboard.form.label.total-number-duty-unfinished" />
 		</th>
-		<td><acme:print value="${numberOfTasksUnfinished}" /></td>
+		<td><acme:print value="${numberOfDutiesUnfinished}" /></td>
 	</tr>
 	<tr>
 		<th scope="row"><acme:message

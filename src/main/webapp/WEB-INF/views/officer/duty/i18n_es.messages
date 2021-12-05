@@ -1,0 +1,39 @@
+# i18n_es.messages
+#
+# Copyright (C) 2012-2021 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+officer.duty.form.label.title = Título:
+officer.duty.form.label.startTime = Momento de inicio:
+officer.duty.form.label.endTime = Momento de fin:
+officer.duty.form.label.workload = Carga de trabajo (en horas):
+officer.duty.form.label.description = Descripción:
+officer.duty.form.label.info = Información adicional:
+
+officer.duty.form.label.isPublic = ¿Quieres que la duty sea publica? 
+
+officer.duty.form.button.update = Actualizar
+officer.duty.form.button.delete= Borrar
+officer.duty.form.button.create = Crear
+officer.duty.form.button.return = Volver
+
+officer.duty.form.error.isBefore = La fecha de finalizacion debe ser posterior a la fecha de inicio 
+officer.duty.form.error.workload = La carga de trabajo no puede superar el periodo de ejecucion
+çofficer.duty.form.error.workload.decimal = La parte decimal de la carga de trabajo debe ser menor a 60 minutos
+officer.duty.form.error.workload.unity = La parte entera debe ser menor a 100 horas
+officer.duty.form.error.spam = Se ha detectado spam en el texto introducido
+officer.duty.form.error.datePattern = El patrón introducido es incorrecto
+
+officer.duty.list.label.title = Título
+officer.duty.list.label.startTime = Momento de inicio
+officer.duty.list.label.endTime = Momento de fin
+officer.duty.list.label.workload = Carga de trabajo (en horas)
+
+officer.duty.form.placeholder.title = Ir al mercadona
+officer.duty.form.placeholder.description = Comprar papel de cocina y huevos
+officer.duty.form.placeholder.workload = 0.00
