@@ -17,8 +17,8 @@ public class AdministratorDashboardShowTest extends AcmeOneTest{
 	@CsvFileSource(resources = "/administrator/dashboard/show.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
 	public void show(final String ratioShoutMarked, final String ratioShoutZeroXx4, 
-		final String averageByDollar, final String averageByEuro, final String averageByPound,
-		final String deviationByDollar, final String deviationByEuro, final String deviationByPound,
+		final String averageByXXA, final String averageByXXB, final String averageByXXC,
+		final String deviationByXXA, final String deviationByXXB, final String deviationByXXC,
 		final String averageNumberOfJobsPerEmployer,final String averageNumberOfApplicationsPerWorker,//
 		final String averageNumberOfApplicationsPerEmployer, final String numberOfDutiesPublic,//
 		final String numberOfDutiesPrivate, final String numberOfDutiesFinished,//
@@ -30,12 +30,12 @@ public class AdministratorDashboardShowTest extends AcmeOneTest{
 		final List<String> csvList = new ArrayList<>();
 		csvList.add(ratioShoutMarked);
 		csvList.add(ratioShoutZeroXx4);
-		csvList.add(averageByDollar);
-		csvList.add(averageByEuro);
-		csvList.add(averageByPound);
-		csvList.add(deviationByDollar);
-		csvList.add(deviationByEuro);
-		csvList.add(deviationByPound);
+		csvList.add(averageByXXA);
+		csvList.add(averageByXXB);
+		csvList.add(averageByXXC);
+		csvList.add(deviationByXXA);
+		csvList.add(deviationByXXB);
+		csvList.add(deviationByXXC);
 		csvList.add(averageNumberOfJobsPerEmployer);
 		csvList.add(averageNumberOfApplicationsPerWorker);
 		csvList.add(averageNumberOfApplicationsPerEmployer);

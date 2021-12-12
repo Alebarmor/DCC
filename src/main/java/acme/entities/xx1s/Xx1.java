@@ -68,6 +68,7 @@ public class Xx1 extends DomainEntity {
 		return result.toString();
 	}
 	
+	//XXP
 	public Boolean isXx2Current() {
 		Boolean res = false;
 		final String[] trozos = this.xx2.split("/");

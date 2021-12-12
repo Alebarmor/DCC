@@ -28,14 +28,14 @@ anonymous.shout.list.label.text = Texto
 anonymous.shout.list.label.xx1 = Xx1
 
 anonymous.shout.form.error.spam = Se ha detectado spam en el texto introducido
-anonymous.xx1.form.error.xx4-currency = Solo podemos aceptar 'Xxa', 'Xxb' o 'Xxc' como símbolos válidos
+anonymous.xx1.form.error.xx4-currency = Solo podemos aceptar 'XXA', 'XXB' o 'XXC' como símbolos válidos
 anonymous.xx1.form.error.xx4-positive = Solo se aceptan cantidades positivas de xe4
 anonymous.xx1.form.error.xx4-null = El campo de xe4 no debe de estar vacío
 
 anonymous.shout.form.error.info-blank = Info no debe estar en blanco
 anonymous.xx1.form.error.xx2-blank = El xe2 no debe estar vacío
 anonymous.xx1.form.error.xx2-duplicated = El xe2 debe ser único
-anonymous.xx1.form.error.xx2-regex = El xe2 debe cumplir el siguiente patrón: XXP; donde las w's representan letras (entre x y y letras de forma que el xe2 sea único), las y's denotas el año actual, las m's el mes actual y las d's el día actual
+anonymous.xx1.form.error.xx2-regex = El xe2 debe cumplir el siguiente patrón: XXP; donde las w's representan letras (entre x y y letras de forma que el xe2 sea único), las y's denotan el año actual, las m's el mes actual y las d's el día actual
 anonymous.xx1.form.error.xx3-null = La xe3 no debe estar vacía
 anonymous.xx1.form.error.xx3-week = La xe3 debe ser al menos con una semana después de ahora
 anonymous.xx1.form.error.xx2-date = La fecha del patrón no es la actual

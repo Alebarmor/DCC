@@ -39,39 +39,39 @@
 	</tr>
 	<tr>
 		<th scope="row"><acme:message
-				code="administrator.dashboard.form.label.average-by-dollars" />
+				code="administrator.dashboard.form.label.average-by-XXA" />
 		</th>
-		<td><acme:print value="${averageByDollar}" /></td>
+		<td><acme:print value="${averageByXXA}" /></td>
 	</tr>
 	<tr>
 		<th scope="row"><acme:message
-				code="administrator.dashboard.form.label.average-by-euros" />
+				code="administrator.dashboard.form.label.average-by-XXB" />
 		</th>
-		<td><acme:print value="${averageByEuro}" /></td>
+		<td><acme:print value="${averageByXXB}" /></td>
 	</tr>
 	<tr>
 		<th scope="row"><acme:message
-				code="administrator.dashboard.form.label.average-by-pounds" />
+				code="administrator.dashboard.form.label.average-by-XXC" />
 		</th>
-		<td><acme:print value="${averageByPound}" /></td>
+		<td><acme:print value="${averageByXXC}" /></td>
 	</tr>
 	<tr>
 		<th scope="row"><acme:message
-				code="administrator.dashboard.form.label.deviation-by-dollars" />
+				code="administrator.dashboard.form.label.deviation-by-XXA" />
 		</th>
-		<td><acme:print value="${deviationByDollar}" /></td>
+		<td><acme:print value="${deviationByXXA}" /></td>
 	</tr>
 	<tr>
 		<th scope="row"><acme:message
-				code="administrator.dashboard.form.label.deviation-by-euros" />
+				code="administrator.dashboard.form.label.deviation-by-XXB" />
 		</th>
-		<td><acme:print value="${deviationByEuro}" /></td>
+		<td><acme:print value="${deviationByXXB}" /></td>
 	</tr>
 	<tr>
 		<th scope="row"><acme:message
-				code="administrator.dashboard.form.label.deviation-by-pounds" />
+				code="administrator.dashboard.form.label.deviation-by-XXC" />
 		</th>
-		<td><acme:print value="${deviationByPound}" /></td>
+		<td><acme:print value="${deviationByXXC}" /></td>
 	</tr>
 	<tr>
 		<th scope="row"><acme:message

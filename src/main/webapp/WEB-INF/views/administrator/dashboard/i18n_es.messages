@@ -32,11 +32,11 @@ administrator.dashboard.form.label.minimum-execution-period = Periodo de ejecuci
 
 administrator.dashboard.form.label.ratio-shout-marked = Ratio de gritos marcados como importantes
 administrator.dashboard.form.label.ratio-shout-zero = Ratio de gritos cuyo xe4 es cero
-administrator.dashboard.form.label.average-by-Xxa = Media por Xxa (gritos)
-administrator.dashboard.form.label.average-by-Xxb = Media por Xxb (gritos)
-administrator.dashboard.form.label.average-by-Xxc = Media por Xxc (gritos)
-administrator.dashboard.form.label.deviation-by-Xxa = Desviación estándar por Xxa (gritos)
-administrator.dashboard.form.label.deviation-by-Xxb = Desviación estándar por Xxb (gritos)
-administrator.dashboard.form.label.deviation-by-Xxc = Desviación estándar por Xxc (gritos)
+administrator.dashboard.form.label.average-by-XXA = Media por XXA (gritos)
+administrator.dashboard.form.label.average-by-XXB = Media por XXB (gritos)
+administrator.dashboard.form.label.average-by-XXC = Media por XXC (gritos)
+administrator.dashboard.form.label.deviation-by-XXA = Desviación estándar por XXA (gritos)
+administrator.dashboard.form.label.deviation-by-XXB = Desviación estándar por XXB (gritos)
+administrator.dashboard.form.label.deviation-by-XXC = Desviación estándar por XXC (gritos)
 
 administrator.dashboard.form.title.application-statuses = Estado de las solicitudes

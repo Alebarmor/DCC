@@ -1,3 +1,0 @@
-timestamp,test-class,test-method,time,description,result
-2021-12-05 18:50:53.855,acme.testing.authenticated.duty.AuthenticatedDutyListAndShowTest,listAndShowTest,142052,"[1] recordIndex=0, title=Trying a little test",OK
-2021-12-05 18:50:58.588,acme.testing.authenticated.duty.AuthenticatedDutyListAndShowTest,listAndShowNegativeTest,4436,"[1] ",OK

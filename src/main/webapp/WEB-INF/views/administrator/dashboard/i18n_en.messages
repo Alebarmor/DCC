@@ -32,12 +32,12 @@ administrator.dashboard.form.label.minimum-execution-period = Minimum execution 
 
 administrator.dashboard.form.label.ratio-shout-marked = Ratio of shouts marked as important
 administrator.dashboard.form.label.ratio-shout-zero = Ratio of shouts whose xx4 is zero
-administrator.dashboard.form.label.average-by-Xxa = Average by Xxa (shouts)
-administrator.dashboard.form.label.average-by-Xxb = Average by Xxb (shouts)
-administrator.dashboard.form.label.average-by-Xxc = Average by Xxc (shouts)
-administrator.dashboard.form.label.deviation-by-Xxa = Standard deviation by Xxa (shouts)
-administrator.dashboard.form.label.deviation-by-Xxb = Standard deviation by Xxb (shouts)
-administrator.dashboard.form.label.deviation-by-Xxc = Standard deviation by Xxc (shouts)
+administrator.dashboard.form.label.average-by-XXA = Average by XXA (shouts)
+administrator.dashboard.form.label.average-by-XXB = Average by XXB (shouts)
+administrator.dashboard.form.label.average-by-XXC = Average by XXC (shouts)
+administrator.dashboard.form.label.deviation-by-XXA = Standard deviation by XXA (shouts)
+administrator.dashboard.form.label.deviation-by-XXB = Standard deviation by XXB (shouts)
+administrator.dashboard.form.label.deviation-by-XXC = Standard deviation by XXC (shouts)
 
 administrator.dashboard.form.title.application-statuses = Application statuses
 
