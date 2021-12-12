@@ -70,12 +70,12 @@ public class Dashboard implements Serializable {
 
 	Double 						ratioShoutMarked;
 	Double						ratioShoutZeroXx4;
-	Double 						averageByDollar;
-	Double 						averageByEuro;
-	Double 						averageByPound;
-	Double 						deviationByDollar;
-	Double 						deviationByEuro;
-	Double 						deviationByPound;
+	Double 						averageByXXA;
+	Double 						averageByXXB;
+	Double 						averageByXXC;
+	Double 						deviationByXXA;
+	Double 						deviationByXXB;
+	Double 						deviationByXXC;
 
 	// Derived attributes -----------------------------------------------------
 

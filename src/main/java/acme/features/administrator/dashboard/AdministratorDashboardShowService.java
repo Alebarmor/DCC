@@ -90,8 +90,8 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 			"maximumEndeavoursExecutionPeriod","minimumEndeavoursExecutionPeriod", //
 			"averageEndeavoursWorkload",  "deviationEndeavoursWorkload",
 			"maximumEndeavoursWorkload", "minimumEndeavoursWorkload","ratioShoutMarked",
-			"averageByDollar","averageByEuro","averageByPound","deviationByDollar","deviationByEuro",
-			"deviationByPound","ratioShoutZeroXx4");
+			"averageByXXA","averageByXXB","averageByXXC","deviationByXXA","deviationByXXB",
+			"deviationByXXC","ratioShoutZeroXx4");
 	}
 
 	@Override
@@ -125,66 +125,66 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 
 		final Double ratioShoutMarked;
 		final Double ratioShoutZeroXx4;
-		final Double averageByDollar;
-		final Double averageByEuro;
-		final Double averageByPound;
-		final Double deviationByDollar;
-		final Double deviationByEuro;
-		final Double deviationByPound;
+		final Double averageByXXA;
+		final Double averageByXXB;
+		final Double averageByXXC;
+		final Double deviationByXXA;
+		final Double deviationByXXB;
+		final Double deviationByXXC;
 		
 		ratioShoutMarked = (double)(1.0 - this.repository.numberOfXx1sTrue()/this.repository.numberOfXx1s());
 		ratioShoutZeroXx4 = (double)this.repository.numberOfXx1sZeroXx4()/this.repository.numberOfXx1s();
-		double euros=.0;
-		int nEuros=0;
-		double dollars=.0;
-		int nDollars = 0; 
-		double pounds=.0;
-		int nPounds = 0; 
+		double XXBs=.0;
+		int nXXBs=0;
+		double XXAs=.0;
+		int nXXAs = 0; 
+		double XXCs=.0;
+		int nXXCs = 0; 
 		for(final Xx1 s : this.repository.findXx1s()) {
-			if(s.getXx4().getCurrency().equals("USD")) {
-				nDollars++;
-				dollars=dollars+s.getXx4().getAmount();
+			if(s.getXx4().getCurrency().equals("XXA")) {
+				nXXAs++;
+				XXAs=XXAs+s.getXx4().getAmount();
 			}
-			if(s.getXx4().getCurrency().equals("EUR")) {
-				nEuros++;
-				euros=euros+s.getXx4().getAmount();
+			if(s.getXx4().getCurrency().equals("XXB")) {
+				nXXBs++;
+				XXBs=XXBs+s.getXx4().getAmount();
 			}
-			if(s.getXx4().getCurrency().equals("GBP")) {
-				nPounds++;
-				pounds=pounds+s.getXx4().getAmount();
+			if(s.getXx4().getCurrency().equals("XXC")) {
+				nXXCs++;
+				XXCs=XXCs+s.getXx4().getAmount();
 			}
 		}
-		averageByDollar = dollars/nDollars;
-		averageByEuro = euros/nEuros;
-		averageByPound = pounds/nPounds;
+		averageByXXA = XXAs/nXXAs;
+		averageByXXB = XXBs/nXXBs;
+		averageByXXC = XXCs/nXXCs;
 		
-		Double stddevDollar=.0;
-		Double stddevEuro=.0;
-		Double stddevPound=.0;
+		Double stddevXXA=.0;
+		Double stddevXXB=.0;
+		Double stddevXXC=.0;
 		for(final Xx1 s : this.repository.findXx1s()) {
-			if(s.getXx4().getCurrency().equals("USD")) {
-				stddevDollar += Math.pow(s.getXx4().getAmount() - averageByDollar, 2);
+			if(s.getXx4().getCurrency().equals("XXA")) {
+				stddevXXA += Math.pow(s.getXx4().getAmount() - averageByXXA, 2);
 			}
-			if(s.getXx4().getCurrency().equals("EUR")) {
-				stddevEuro += Math.pow(s.getXx4().getAmount() - averageByEuro, 2);
+			if(s.getXx4().getCurrency().equals("XXB")) {
+				stddevXXB += Math.pow(s.getXx4().getAmount() - averageByXXB, 2);
 			}
-			if(s.getXx4().getCurrency().equals("GBP")) {
-				stddevPound += Math.pow(s.getXx4().getAmount() - averageByPound, 2);
+			if(s.getXx4().getCurrency().equals("XXC")) {
+				stddevXXC += Math.pow(s.getXx4().getAmount() - averageByXXC, 2);
 			}
 		}
 		
-		deviationByDollar=Math.sqrt(stddevDollar/nDollars);
-		deviationByEuro = Math.sqrt(stddevEuro/nEuros);
-		deviationByPound = Math.sqrt(stddevPound/nPounds);
+		deviationByXXA=Math.sqrt(stddevXXA/nXXAs);
+		deviationByXXB = Math.sqrt(stddevXXB/nXXBs);
+		deviationByXXC = Math.sqrt(stddevXXC/nXXCs);
 		
 		result.setRatioShoutMarked(ratioShoutMarked);
 		result.setRatioShoutZeroXx4(ratioShoutZeroXx4);
-		result.setAverageByDollar(averageByDollar);
-		result.setAverageByEuro(averageByEuro);
-		result.setAverageByPound(averageByPound);
-		result.setDeviationByDollar(deviationByDollar);
-		result.setDeviationByEuro(deviationByEuro);
-		result.setDeviationByPound(deviationByPound);
+		result.setAverageByXXA(averageByXXA);
+		result.setAverageByXXB(averageByXXB);
+		result.setAverageByXXC(averageByXXC);
+		result.setDeviationByXXA(deviationByXXA);
+		result.setDeviationByXXB(deviationByXXB);
+		result.setDeviationByXXC(deviationByXXC);
 		
 		// ------------------- Duty -----------------------
 		

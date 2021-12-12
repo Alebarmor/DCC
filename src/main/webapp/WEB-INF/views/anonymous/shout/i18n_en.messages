@@ -28,7 +28,7 @@ anonymous.shout.list.label.text = Text
 anonymous.shout.list.label.xx1 = Xx1
 
 anonymous.shout.form.error.spam = Spam has been detected on text above
-anonymous.xx1.form.error.xx4-currency = We can only accept 'Xxa', 'Xxb' or 'Xxc' as valid symbols
+anonymous.xx1.form.error.xx4-currency = We can only accept 'XXA', 'XXB' or 'XXC' as valid symbols
 anonymous.xx1.form.error.xx4-positive = We only accept positive amounts of money
 anonymous.xx1.form.error.xx4-null = Xx4 must not be null
 

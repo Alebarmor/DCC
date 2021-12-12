@@ -92,7 +92,7 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 		final Configuration confEng = listConfigurations.get(0);
 		final Configuration confEsp = listConfigurations.get(1);
 		
-		final boolean isDuplicated = this.repository.findOneXx1ByXx2(this.xx1Entity.getXx2()) != null;
+		final boolean isDuplicated = this.repository.findOneXx1ByXx2(entity.getXx1().getXx2()) != null;
 		
 		final Date aWeekAfter = new Date(System.currentTimeMillis() + 604800001);
 
@@ -108,14 +108,6 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 			errors.state(request, !entity.getInfo().equals(""), "info", "anonymous.shout.form.error.info-blank");
 		}
 		
-//		if (!errors.hasErrors("xx2")) {
-//			errors.state(request, !this.xx1Entity.getXx2().equals(""), "xx2", "anonymous.xx1.form.error.xx2-blank");
-//		}
-		
-//		if (!errors.hasErrors("xx1.xx2")) {
-//			errors.state(request, pattern.matcher(this.xx1Entity.getXx2()).matches(), "xx1.xx2", "anonymous.xx1.form.error.xx2-regex");
-//		}
-		
 		if (!errors.hasErrors("xx1.xx2")) {
 			errors.state(request, !isDuplicated, "xx1.xx2", "anonymous.xx1.form.error.xx2-duplicated");
 		}
@@ -124,24 +116,12 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 			errors.state(request, entity.getXx1().isXx2Current(), "xx1.xx2", "anonymous.xx1.form.error.xx2-date");
 		}
 		
-//		if (!errors.hasErrors("xx3")) {
-//			errors.state(request, this.xx1Entity.getXx3() != null, "xx3", "anonymous.xx1.form.error.xx3-null");
-//		}
-		
 		if (!errors.hasErrors("xx1.xx3")) {
 			errors.state(request, entity.getXx1().getXx3().after(aWeekAfter), "xx1.xx3", "anonymous.xx1.form.error.xx3-week");
 		}
 		
-//		if (!errors.hasErrors("xx4")) {
-//			errors.state(request, this.xx1Entity.getXx4() != null, "xx4", "anonymous.xx1.form.error.xx4-null");
-//		}
-		
 		if (!errors.hasErrors("xx1.xx4")) {
-			errors.state(request, ((entity.getXx1().getXx4().getCurrency().equals("USD")) || (entity.getXx1().getXx4().getCurrency().equals("EUR")) || (entity.getXx1().getXx4().getCurrency().equals("GBP"))), "xx1.xx4", "anonymous.xx1.form.error.xx4-currency");
-		}
-		
-		if (!errors.hasErrors("xx1.xx4")) {
-			errors.state(request, entity.getXx1().getXx4().getAmount() >= 0, "xx1.xx4", "anonymous.xx1.form.error.xx4-positive");
+			errors.state(request, ((entity.getXx1().getXx4().getCurrency().equals("XXA")) || (entity.getXx1().getXx4().getCurrency().equals("XXB")) || (entity.getXx1().getXx4().getCurrency().equals("XXC"))), "xx1.xx4", "anonymous.xx1.form.error.xx4-currency");
 		}
 	
 	}

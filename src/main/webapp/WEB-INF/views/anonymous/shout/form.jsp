@@ -23,7 +23,7 @@
 	<acme:footer-subpanel code="anonymous.xx1">
 		<acme:form-textbox code="anonymous.xx1.form.label.xx2" path="xx1.xx2" placeholder="XXP"/>
 		<acme:form-moment code="anonymous.xx1.form.label.xx3" path="xx1.xx3" placeholder="2000/01/01 00:00"/>
-		<acme:form-money code="anonymous.xx1.form.label.xx4" path="xx1.xx4" placeholder="Xxa/Xxb/Xxc 31592.19"/>
+		<acme:form-money code="anonymous.xx1.form.label.xx4" path="xx1.xx4" placeholder="XXA/XXB/XXC 31592.19"/>
 		<acme:form-checkbox code="anonymous.xx1.form.label.xx5" path="xx1.xx5"/>
 	</acme:footer-subpanel>
 	

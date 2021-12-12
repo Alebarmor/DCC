@@ -66,7 +66,7 @@
 	<bean id="xx101" class="acme.entities.xx1s.Xx1">
 		<property name="xx2" value="2111/28-12345"/>
 		<property name="xx3" value="2021/11/28 12:30"/>
-		<property name="xx4" value="EUR 19.2"/>
+		<property name="xx4" value="XXB 19.2"/>
 		<property name="xx5" value="true"/>
 		<property name="shout">
 			<ref bean="shout01"/>
@@ -76,7 +76,7 @@
 	<bean id="xx102" class="acme.entities.xx1s.Xx1">
 		<property name="xx2" value="2111/28-12346"/>
 		<property name="xx3" value="2021/11/28 00:30"/>
-		<property name="xx4" value="GBP 69.69"/>
+		<property name="xx4" value="XXC 69.69"/>
 		<property name="xx5" value="false"/>
 		<property name="shout">
 			<ref bean="shout02"/>
@@ -86,7 +86,7 @@
 	<bean id="xx103" class="acme.entities.xx1s.Xx1">
 		<property name="xx2" value="2111/28-12347"/>
 		<property name="xx3" value="2021/11/28 18:56"/>
-		<property name="xx4" value="USD 80.45"/>
+		<property name="xx4" value="XXA 80.45"/>
 		<property name="xx5" value="true"/>
 		<property name="shout">
 			<ref bean="shout03"/>
@@ -96,7 +96,7 @@
 	<bean id="xx104" class="acme.entities.xx1s.Xx1">
 		<property name="xx2" value="2102/23-12345"/>
 		<property name="xx3" value="2021/02/23 23:59"/>
-		<property name="xx4" value="USD 0.0"/>
+		<property name="xx4" value="XXA 0.0"/>
 		<property name="xx5" value="false"/>
 		<property name="shout">
 			<ref bean="shout04"/>
@@ -307,7 +307,7 @@
 		<property name="reference" value="EMP1-JOB3"/>
 		<property name="title" value="Title 3"/>
 		<property name="deadline" value="2000/01/31 00:00"/>
-		<property name="salary" value="USD 25,000.00"/>
+		<property name="salary" value="XXA 25,000.00"/>
 		<property name="score" value="50.00"/>
 		<property name="description" value="Lorem ipsum sit dolor amet."/>
 		<property name="moreInfo" value="http://www.example.com"/>
