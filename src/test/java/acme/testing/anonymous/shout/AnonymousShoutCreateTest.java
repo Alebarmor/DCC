@@ -52,7 +52,8 @@ public class AnonymousShoutCreateTest extends AcmeOneTest {
 		if(currentDay.length()==1) {
 			currentDay = "0" + currentDay;
 		}
-				
+		
+		//XXP
 		final String xx2 =  currentYear + currentMonth + "/" + currentDay + "-" +"01234";
 		
 		// ------------------------
@@ -93,6 +94,7 @@ public class AnonymousShoutCreateTest extends AcmeOneTest {
 			currentDay = "0" + currentDay;
 		}
 		
+		//XXP
 		final String xx2 =  currentYear + currentMonth + "/" + currentDay + "-" +"12345";
 		
 		// ------------------------
