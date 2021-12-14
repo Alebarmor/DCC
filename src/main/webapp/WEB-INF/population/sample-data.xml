@@ -64,7 +64,7 @@
 	<!-- Xx1s -->
 	
 	<bean id="xx101" class="acme.entities.xx1s.Xx1">
-		<property name="xx2" value="2111/28-12345"/>
+		<property name="xx2" value="2111/28-12345"/> <!-- XXP -->
 		<property name="xx3" value="2021/11/28 12:30"/>
 		<property name="xx4" value="XXB 19.2"/>
 		<property name="xx5" value="true"/>
@@ -74,7 +74,7 @@
 	</bean>
 	
 	<bean id="xx102" class="acme.entities.xx1s.Xx1">
-		<property name="xx2" value="2111/28-12346"/>
+		<property name="xx2" value="2111/28-12346"/> <!-- XXP -->
 		<property name="xx3" value="2021/11/28 00:30"/>
 		<property name="xx4" value="XXC 69.69"/>
 		<property name="xx5" value="false"/>
@@ -84,7 +84,7 @@
 	</bean>
 	
 	<bean id="xx103" class="acme.entities.xx1s.Xx1">
-		<property name="xx2" value="2111/28-12347"/>
+		<property name="xx2" value="2111/28-12347"/> <!-- XXP -->
 		<property name="xx3" value="2021/11/28 18:56"/>
 		<property name="xx4" value="XXA 80.45"/>
 		<property name="xx5" value="true"/>
@@ -94,7 +94,7 @@
 	</bean>
 	
 	<bean id="xx104" class="acme.entities.xx1s.Xx1">
-		<property name="xx2" value="2102/23-12345"/>
+		<property name="xx2" value="2102/23-12345"/> <!-- XXP -->
 		<property name="xx3" value="2021/02/23 23:59"/>
 		<property name="xx4" value="XXA 0.0"/>
 		<property name="xx5" value="false"/>
