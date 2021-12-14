@@ -15,7 +15,6 @@ package acme.features.anonymous.shout;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.regex.Pattern;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -93,7 +92,6 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 		final Configuration confEng = listConfigurations.get(0);
 		final Configuration confEsp = listConfigurations.get(1);
 		
-		final Pattern pattern = Pattern.compile("^\\w{2,4}:([0-9]{2}):([0-1][0-9][0-3][1-9])$");
 		final boolean isDuplicated = this.repository.findOneXx1ByXx2(entity.getXx1().getXx2()) != null;
 		
 		final Date aWeekAfter = new Date(System.currentTimeMillis() + 604800001);
@@ -116,10 +114,6 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 		
 		if (!errors.hasErrors("xx1.xx2")) {
 			errors.state(request, entity.getXx1().isXx2Current(), "xx1.xx2", "anonymous.xx1.form.error.xx2-date");
-		}
-		
-		if (!errors.hasErrors("xx2")) {
-			errors.state(request, pattern.matcher(entity.getXx1().getXx2()).matches(), "xx2", "anonymous.xx1.form.error.xx2-regex");
 		}
 		
 		if (!errors.hasErrors("xx1.xx3")) {
