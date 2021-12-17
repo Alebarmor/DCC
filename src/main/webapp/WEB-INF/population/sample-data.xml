@@ -26,8 +26,8 @@
 		<property name="author" value="John Doe"/>
 		<property name="text" value="I'm happy!"/>
 		<property name="info"><null/></property>	
-		<property name="xx1">
-			<ref bean="xx101"/>
+		<property name="solim">
+			<ref bean="solim01"/>
 		</property>
 	</bean>
 	
@@ -36,8 +36,8 @@
 		<property name="author" value="Jane Doe"/>
 		<property name="text" value="I'm the master of my room!"/>
 		<property name="info" value="http://www.example.org"/>
-		<property name="xx1">
-			<ref bean="xx102"/>
+		<property name="solim">
+			<ref bean="solim02"/>
 		</property>	
 	</bean>
 	
@@ -46,8 +46,8 @@
 		<property name="author" value="Foo Bar"/>
 		<property name="text" value="Just turning 50!"/>
 		<property name="info" value="http://happybirthday.com"/>
-		<property name="xx1">
-			<ref bean="xx103"/>
+		<property name="solim">
+			<ref bean="solim03"/>
 		</property>		
 	</bean>
 	
@@ -56,48 +56,48 @@
 		<property name="text" value="Woa! This app's so cool!"/>
 		<property name="moment" value="2021/02/13 12:30"/>
 		<property name="info" value="http://www.sample-app.com"/>
-		<property name="xx1">
-			<ref bean="xx104"/>
+		<property name="solim">
+			<ref bean="solim04"/>
 		</property>
 	</bean>
 	
-	<!-- Xx1s -->
+	<!-- Solims -->
 	
-	<bean id="xx101" class="acme.entities.xx1s.Xx1">
-		<property name="xx2" value="2111/28-12345"/> <!-- XXP -->
-		<property name="xx3" value="2021/11/28 12:30"/>
-		<property name="xx4" value="XXB 19.2"/>
-		<property name="xx5" value="true"/>
+	<bean id="solim01" class="acme.entities.solims.Solim">
+		<property name="keylet" value="211128#123"/>
+		<property name="deadline" value="2021/11/28 12:30"/>
+		<property name="budget" value="USD 19.2"/>
+		<property name="important" value="true"/>
 		<property name="shout">
 			<ref bean="shout01"/>
 		</property>
 	</bean>
 	
-	<bean id="xx102" class="acme.entities.xx1s.Xx1">
-		<property name="xx2" value="2111/28-12346"/> <!-- XXP -->
-		<property name="xx3" value="2021/11/28 00:30"/>
-		<property name="xx4" value="XXC 69.69"/>
-		<property name="xx5" value="false"/>
+	<bean id="solim02" class="acme.entities.solims.Solim">
+		<property name="keylet" value="211128#132"/>
+		<property name="deadline" value="2021/11/28 00:30"/>
+		<property name="budget" value="GBP 69.69"/>
+		<property name="important" value="false"/>
 		<property name="shout">
 			<ref bean="shout02"/>
 		</property>
 	</bean>
 	
-	<bean id="xx103" class="acme.entities.xx1s.Xx1">
-		<property name="xx2" value="2111/28-12347"/> <!-- XXP -->
-		<property name="xx3" value="2021/11/28 18:56"/>
-		<property name="xx4" value="XXA 80.45"/>
-		<property name="xx5" value="true"/>
+	<bean id="solim03" class="acme.entities.solims.Solim">
+		<property name="keylet" value="211128#321"/>
+		<property name="deadline" value="2021/11/28 18:56"/>
+		<property name="budget" value="EUR 80.45"/>
+		<property name="important" value="true"/>
 		<property name="shout">
 			<ref bean="shout03"/>
 		</property>
 	</bean>
 	
-	<bean id="xx104" class="acme.entities.xx1s.Xx1">
-		<property name="xx2" value="2102/23-12345"/> <!-- XXP -->
-		<property name="xx3" value="2021/02/23 23:59"/>
-		<property name="xx4" value="XXA 0.0"/>
-		<property name="xx5" value="false"/>
+	<bean id="solim04" class="acme.entities.solims.Solim">
+		<property name="keylet" value="210223#123"/>
+		<property name="deadline" value="2021/02/23 23:59"/>
+		<property name="budget" value="EUR 0.0"/>
+		<property name="important" value="false"/>
 		<property name="shout">
 			<ref bean="shout04"/>
 		</property>
@@ -307,7 +307,7 @@
 		<property name="reference" value="EMP1-JOB3"/>
 		<property name="title" value="Title 3"/>
 		<property name="deadline" value="2000/01/31 00:00"/>
-		<property name="salary" value="XXA 25,000.00"/>
+		<property name="salary" value="EUR 25,000.00"/>
 		<property name="score" value="50.00"/>
 		<property name="description" value="Lorem ipsum sit dolor amet."/>
 		<property name="moreInfo" value="http://www.example.com"/>

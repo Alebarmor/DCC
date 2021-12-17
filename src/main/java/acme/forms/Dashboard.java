@@ -66,16 +66,16 @@ public class Dashboard implements Serializable {
 	Double						maximumEndeavoursExecutionPeriod;
 	Double						minimumEndeavoursExecutionPeriod;
 	
-	// Xx1
+	// Solim
 
 	Double 						ratioShoutMarked;
-	Double						ratioShoutZeroXx4;
-	Double 						averageByXXA;
-	Double 						averageByXXB;
-	Double 						averageByXXC;
-	Double 						deviationByXXA;
-	Double 						deviationByXXB;
-	Double 						deviationByXXC;
+	Double						ratioShoutZeroBudget;
+	Double 						averageByEUR;
+	Double 						averageByUSD;
+	Double 						averageByGBP;
+	Double 						deviationByEUR;
+	Double 						deviationByUSD;
+	Double 						deviationByGBP;
 
 	// Derived attributes -----------------------------------------------------
 

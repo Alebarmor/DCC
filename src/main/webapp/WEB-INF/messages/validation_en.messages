@@ -22,7 +22,7 @@ javax.validation.constraints.NotEmpty.message = Must not be empty
 javax.validation.constraints.NotNull.message = May not be null
 javax.validation.constraints.Null.message = Must be null
 javax.validation.constraints.Past.message = Must be in the past
-javax.validation.constraints.Pattern.message = Must match pattern "{regexp}"
+javax.validation.constraints.Pattern.message = Keylet must be like this pattern: yymmdd#\d{1,3}; where the y’s refer to the current year, the m’s to the current month, the d’s to the current day, follow by a '#' and between 1 and 3 random numbers
 javax.validation.constraints.Size.message = Must have between {min} and {max} items
 
 org.hibernate.validator.constraints.CreditCardNumber.message = Invalid credit card number

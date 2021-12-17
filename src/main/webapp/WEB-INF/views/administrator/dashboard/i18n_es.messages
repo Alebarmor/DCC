@@ -31,12 +31,12 @@ administrator.dashboard.form.label.maximum-execution-period = Periodo de ejecuci
 administrator.dashboard.form.label.minimum-execution-period = Periodo de ejecución mínima (en días)
 
 administrator.dashboard.form.label.ratio-shout-marked = Ratio de gritos marcados como importantes
-administrator.dashboard.form.label.ratio-shout-zero = Ratio de gritos cuyo xe4 es cero
-administrator.dashboard.form.label.average-by-XXA = Media por XXA (gritos)
-administrator.dashboard.form.label.average-by-XXB = Media por XXB (gritos)
-administrator.dashboard.form.label.average-by-XXC = Media por XXC (gritos)
-administrator.dashboard.form.label.deviation-by-XXA = Desviación estándar por XXA (gritos)
-administrator.dashboard.form.label.deviation-by-XXB = Desviación estándar por XXB (gritos)
-administrator.dashboard.form.label.deviation-by-XXC = Desviación estándar por XXC (gritos)
+administrator.dashboard.form.label.ratio-shout-zero = Ratio de gritos cuyo presupuesto es cero
+administrator.dashboard.form.label.average-by-EUR = Media por EUR (gritos)
+administrator.dashboard.form.label.average-by-USD = Media por USD (gritos)
+administrator.dashboard.form.label.average-by-GBP = Media por GBP (gritos)
+administrator.dashboard.form.label.deviation-by-EUR = Desviación estándar por EUR (gritos)
+administrator.dashboard.form.label.deviation-by-USD = Desviación estándar por USD (gritos)
+administrator.dashboard.form.label.deviation-by-GBP = Desviación estándar por GBP (gritos)
 
 administrator.dashboard.form.title.application-statuses = Estado de las solicitudes

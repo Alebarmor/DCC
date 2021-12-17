@@ -35,43 +35,43 @@
 		<th scope="row"><acme:message
 				code="administrator.dashboard.form.label.ratio-shout-zero" />
 		</th>
-		<td><acme:print value="${ratioShoutZeroXx4}" /></td>
+		<td><acme:print value="${ratioShoutZeroBudget}" /></td>
 	</tr>
 	<tr>
 		<th scope="row"><acme:message
-				code="administrator.dashboard.form.label.average-by-XXA" />
+				code="administrator.dashboard.form.label.average-by-EUR" />
 		</th>
-		<td><acme:print value="${averageByXXA}" /></td>
+		<td><acme:print value="${averageByEUR}" /></td>
 	</tr>
 	<tr>
 		<th scope="row"><acme:message
-				code="administrator.dashboard.form.label.average-by-XXB" />
+				code="administrator.dashboard.form.label.average-by-USD" />
 		</th>
-		<td><acme:print value="${averageByXXB}" /></td>
+		<td><acme:print value="${averageByUSD}" /></td>
 	</tr>
 	<tr>
 		<th scope="row"><acme:message
-				code="administrator.dashboard.form.label.average-by-XXC" />
+				code="administrator.dashboard.form.label.average-by-GBP" />
 		</th>
-		<td><acme:print value="${averageByXXC}" /></td>
+		<td><acme:print value="${averageByGBP}" /></td>
 	</tr>
 	<tr>
 		<th scope="row"><acme:message
-				code="administrator.dashboard.form.label.deviation-by-XXA" />
+				code="administrator.dashboard.form.label.deviation-by-EUR" />
 		</th>
-		<td><acme:print value="${deviationByXXA}" /></td>
+		<td><acme:print value="${deviationByEUR}" /></td>
 	</tr>
 	<tr>
 		<th scope="row"><acme:message
-				code="administrator.dashboard.form.label.deviation-by-XXB" />
+				code="administrator.dashboard.form.label.deviation-by-USD" />
 		</th>
-		<td><acme:print value="${deviationByXXB}" /></td>
+		<td><acme:print value="${deviationByUSD}" /></td>
 	</tr>
 	<tr>
 		<th scope="row"><acme:message
-				code="administrator.dashboard.form.label.deviation-by-XXC" />
+				code="administrator.dashboard.form.label.deviation-by-GBP" />
 		</th>
-		<td><acme:print value="${deviationByXXC}" /></td>
+		<td><acme:print value="${deviationByGBP}" /></td>
 	</tr>
 	<tr>
 		<th scope="row"><acme:message
