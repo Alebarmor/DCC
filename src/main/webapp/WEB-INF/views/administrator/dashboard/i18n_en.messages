@@ -31,13 +31,13 @@ administrator.dashboard.form.label.maximum-execution-period = Maximum execution 
 administrator.dashboard.form.label.minimum-execution-period = Minimum execution period (in days)
 
 administrator.dashboard.form.label.ratio-shout-marked = Ratio of shouts marked as important
-administrator.dashboard.form.label.ratio-shout-zero = Ratio of shouts whose xx4 is zero
-administrator.dashboard.form.label.average-by-XXA = Average by XXA (shouts)
-administrator.dashboard.form.label.average-by-XXB = Average by XXB (shouts)
-administrator.dashboard.form.label.average-by-XXC = Average by XXC (shouts)
-administrator.dashboard.form.label.deviation-by-XXA = Standard deviation by XXA (shouts)
-administrator.dashboard.form.label.deviation-by-XXB = Standard deviation by XXB (shouts)
-administrator.dashboard.form.label.deviation-by-XXC = Standard deviation by XXC (shouts)
+administrator.dashboard.form.label.ratio-shout-zero = Ratio of shouts whose budget is zero
+administrator.dashboard.form.label.average-by-EUR = Average by EUR (shouts)
+administrator.dashboard.form.label.average-by-USD = Average by USD (shouts)
+administrator.dashboard.form.label.average-by-GBP = Average by GBP (shouts)
+administrator.dashboard.form.label.deviation-by-EUR = Standard deviation by EUR (shouts)
+administrator.dashboard.form.label.deviation-by-USD = Standard deviation by USD (shouts)
+administrator.dashboard.form.label.deviation-by-GBP = Standard deviation by GBP (shouts)
 
 administrator.dashboard.form.title.application-statuses = Application statuses
 

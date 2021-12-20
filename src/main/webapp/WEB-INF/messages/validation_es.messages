@@ -22,7 +22,7 @@ javax.validation.constraints.NotEmpty.message = No puede estar vacío
 javax.validation.constraints.NotNull.message = No puede ser nulo
 javax.validation.constraints.Null.message = Debe ser nulo
 javax.validation.constraints.Past.message = Debe estar en el pasado
-javax.validation.constraints.Pattern.message = Debe encajar en el patrón "{regexp}"
+javax.validation.constraints.Pattern.message = Debe encajar en el patrón "w{2,4}:yy:mmdd"; donde las w's representan letras (entre x y y letras de forma que el nombre sea único), las y's denotan el año actual, las m's el mes actual y las d's el día actual
 javax.validation.constraints.Size.message = Debe tener entre {min} y {max} elementos
 
 org.hibernate.validator.constraints.CreditCardNumber.message = Número de tarjeta incorrecto

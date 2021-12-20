@@ -18,7 +18,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import acme.entities.duties.Duty;
-import acme.entities.xx1s.Xx1;
+import acme.entities.tolems.Tolem;
 import acme.framework.repositories.AbstractRepository;
 
 @Repository
@@ -42,19 +42,19 @@ public interface AdministratorDashboardRepository extends AbstractRepository {
 	@Query("select 1.0 * count(a) / (select count(b) from Application b) from Application a where a.status = acme.entities.jobs.ApplicationStatus.REJECTED")
 	Double ratioOfRejectedApplications();
 	
-	//-------------------------------------------------- Xx1 -------------------------------------------------------------------------
+	//-------------------------------------------------- Tolem -------------------------------------------------------------------------
 	
-	@Query("select count(s) from Xx1 s")
-	Integer numberOfXx1s();
+	@Query("select count(s) from Tolem s")
+	Integer numberOfTolems();
 	
-	@Query("select count(s) from Xx1 s where s.xx5 = true")
-	Integer numberOfXx1sTrue();
+	@Query("select count(s) from Tolem s where s.important = true")
+	Integer numberOfTolemsTrue();
 	
-	@Query("select count(s) from Xx1 s where s.xx4.amount = 0.0")
-	Integer numberOfXx1sZeroXx4();
+	@Query("select count(s) from Tolem s where s.budget.amount = 0.0")
+	Integer numberOfTolemsZeroBudget();
 	
-	@Query("select s from Xx1 s")
-	Collection<Xx1> findXx1s();
+	@Query("select s from Tolem s")
+	Collection<Tolem> findTolems();
 			
 	// ------------------------------------------------- Duty --------------------------------------------------------------------------
 	

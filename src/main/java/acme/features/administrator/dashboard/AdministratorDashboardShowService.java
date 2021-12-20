@@ -22,7 +22,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.duties.Duty;
-import acme.entities.xx1s.Xx1;
+import acme.entities.tolems.Tolem;
 import acme.forms.Dashboard;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
@@ -90,8 +90,8 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 			"maximumEndeavoursExecutionPeriod","minimumEndeavoursExecutionPeriod", //
 			"averageEndeavoursWorkload",  "deviationEndeavoursWorkload",
 			"maximumEndeavoursWorkload", "minimumEndeavoursWorkload","ratioShoutMarked",
-			"averageByXXA","averageByXXB","averageByXXC","deviationByXXA","deviationByXXB",
-			"deviationByXXC","ratioShoutZeroXx4");
+			"averageByEUR","averageByUSD","averageByGBP","deviationByEUR","deviationByUSD",
+			"deviationByGBP","ratioShoutZeroBudget");
 	}
 
 	@Override
@@ -121,70 +121,70 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		result.setRatioOfAcceptedApplications(ratioOfAcceptedApplications);
 		result.setRatioOfRejectedApplications(ratioOfRejectedApplications);
 		
-		// ------------------- Xx1 -----------------------
+		// ------------------- Tolem -----------------------
 
 		final Double ratioShoutMarked;
-		final Double ratioShoutZeroXx4;
-		final Double averageByXXA;
-		final Double averageByXXB;
-		final Double averageByXXC;
-		final Double deviationByXXA;
-		final Double deviationByXXB;
-		final Double deviationByXXC;
+		final Double ratioShoutZeroBudget;
+		final Double averageByEUR;
+		final Double averageByUSD;
+		final Double averageByGBP;
+		final Double deviationByEUR;
+		final Double deviationByUSD;
+		final Double deviationByGBP;
 		
-		ratioShoutMarked = (double)(1.0 - this.repository.numberOfXx1sTrue()/this.repository.numberOfXx1s());
-		ratioShoutZeroXx4 = (double)this.repository.numberOfXx1sZeroXx4()/this.repository.numberOfXx1s();
-		double XXBs=.0;
-		int nXXBs=0;
-		double XXAs=.0;
-		int nXXAs = 0; 
-		double XXCs=.0;
-		int nXXCs = 0; 
-		for(final Xx1 s : this.repository.findXx1s()) {
-			if(s.getXx4().getCurrency().equals("XXA")) {
-				nXXAs++;
-				XXAs=XXAs+s.getXx4().getAmount();
+		ratioShoutMarked = ((double)(this.repository.numberOfTolemsTrue()))/((double)(this.repository.numberOfTolems()));
+		ratioShoutZeroBudget = (double)this.repository.numberOfTolemsZeroBudget()/this.repository.numberOfTolems();
+		double USDs=.0;
+		int nUSDs=0;
+		double EURs=.0;
+		int nEURs = 0; 
+		double GBPs=.0;
+		int nGBPs = 0; 
+		for(final Tolem s : this.repository.findTolems()) {
+			if(s.getBudget().getCurrency().equals("EUR")) {
+				nEURs++;
+				EURs=EURs+s.getBudget().getAmount();
 			}
-			if(s.getXx4().getCurrency().equals("XXB")) {
-				nXXBs++;
-				XXBs=XXBs+s.getXx4().getAmount();
+			if(s.getBudget().getCurrency().equals("USD")) {
+				nUSDs++;
+				USDs=USDs+s.getBudget().getAmount();
 			}
-			if(s.getXx4().getCurrency().equals("XXC")) {
-				nXXCs++;
-				XXCs=XXCs+s.getXx4().getAmount();
+			if(s.getBudget().getCurrency().equals("GBP")) {
+				nGBPs++;
+				GBPs=GBPs+s.getBudget().getAmount();
 			}
 		}
-		averageByXXA = XXAs/nXXAs;
-		averageByXXB = XXBs/nXXBs;
-		averageByXXC = XXCs/nXXCs;
+		averageByEUR = EURs/nEURs;
+		averageByUSD = USDs/nUSDs;
+		averageByGBP = GBPs/nGBPs;
 		
-		Double stddevXXA=.0;
-		Double stddevXXB=.0;
-		Double stddevXXC=.0;
-		for(final Xx1 s : this.repository.findXx1s()) {
-			if(s.getXx4().getCurrency().equals("XXA")) {
-				stddevXXA += Math.pow(s.getXx4().getAmount() - averageByXXA, 2);
+		Double stddevEUR=.0;
+		Double stddevUSD=.0;
+		Double stddevGBP=.0;
+		for(final Tolem s : this.repository.findTolems()) {
+			if(s.getBudget().getCurrency().equals("EUR")) {
+				stddevEUR += Math.pow(s.getBudget().getAmount() - averageByEUR, 2);
 			}
-			if(s.getXx4().getCurrency().equals("XXB")) {
-				stddevXXB += Math.pow(s.getXx4().getAmount() - averageByXXB, 2);
+			if(s.getBudget().getCurrency().equals("USD")) {
+				stddevUSD += Math.pow(s.getBudget().getAmount() - averageByUSD, 2);
 			}
-			if(s.getXx4().getCurrency().equals("XXC")) {
-				stddevXXC += Math.pow(s.getXx4().getAmount() - averageByXXC, 2);
+			if(s.getBudget().getCurrency().equals("GBP")) {
+				stddevGBP += Math.pow(s.getBudget().getAmount() - averageByGBP, 2);
 			}
 		}
 		
-		deviationByXXA=Math.sqrt(stddevXXA/nXXAs);
-		deviationByXXB = Math.sqrt(stddevXXB/nXXBs);
-		deviationByXXC = Math.sqrt(stddevXXC/nXXCs);
+		deviationByEUR=Math.sqrt(stddevEUR/nEURs);
+		deviationByUSD = Math.sqrt(stddevUSD/nUSDs);
+		deviationByGBP = Math.sqrt(stddevGBP/nGBPs);
 		
 		result.setRatioShoutMarked(ratioShoutMarked);
-		result.setRatioShoutZeroXx4(ratioShoutZeroXx4);
-		result.setAverageByXXA(averageByXXA);
-		result.setAverageByXXB(averageByXXB);
-		result.setAverageByXXC(averageByXXC);
-		result.setDeviationByXXA(deviationByXXA);
-		result.setDeviationByXXB(deviationByXXB);
-		result.setDeviationByXXC(deviationByXXC);
+		result.setRatioShoutZeroBudget(ratioShoutZeroBudget);
+		result.setAverageByEUR(averageByEUR);
+		result.setAverageByUSD(averageByUSD);
+		result.setAverageByGBP(averageByGBP);
+		result.setDeviationByEUR(deviationByEUR);
+		result.setDeviationByUSD(deviationByUSD);
+		result.setDeviationByGBP(deviationByGBP);
 		
 		// ------------------- Duty -----------------------
 		

@@ -1,4 +1,4 @@
-package acme.entities.xx1s;
+package acme.entities.tolems;
 
 import java.time.LocalDate;
 import java.util.Calendar;
@@ -22,7 +22,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Xx1 extends DomainEntity {
+public class Tolem extends DomainEntity {
 	
 	// Serialisation identifier -----------------------------------------------
 
@@ -30,24 +30,24 @@ public class Xx1 extends DomainEntity {
 
 	// Attributes -------------------------------------------------------------
 	
-	//XXP
-	@Pattern(regexp = "^([0-9]{2}[0-1][0-9])/([0-3][0-9])-\\d{5}$")
+	//XXP w{2,4}:yy:mmdd
+	@Pattern(regexp = "^\\w{2,4}:(\\d{2}):([0-1][0-9][0-3][0-9])$")
 	@NotBlank
-	protected String				xx2;
+	protected String				name;
 	
 	@Temporal(TemporalType.TIMESTAMP)
 	@NotNull
-	protected Date					xx3;
+	protected Date					deadline;
 	
 	@Valid
 	@NotNull
-	protected Money 				xx4;
+	protected Money 				budget;
 	
 	@NotNull
-	protected Boolean 				xx5;
+	protected Boolean 				important;
 	
-	public void setXx5(final Boolean a) {
-		this.xx5 = a;
+	public void setImportant(final Boolean a) {
+		this.important = a;
 	}
 	
 	// Derived attributes -----------------------------------------------------
@@ -55,7 +55,7 @@ public class Xx1 extends DomainEntity {
 	// Relationships ----------------------------------------------------------
 	
 	@Valid
-	@OneToOne(optional = false, mappedBy = "xx1")
+	@OneToOne(optional = false, mappedBy = "tolem")
 	protected Shout shout;
 	
 	@Override
@@ -63,15 +63,15 @@ public class Xx1 extends DomainEntity {
 		StringBuilder result;
 
 		result = new StringBuilder();
-		result.append(this.xx2);
+		result.append(this.name);
 
 		return result.toString();
 	}
 	
 	//XXP
-	public Boolean isXx2Current() {
+	public Boolean isNameCurrent() {
 		Boolean res = false;
-		final String[] trozos = this.xx2.split("/");
+		final String[] trozos = this.name.split(":");
 		
 		final String currentYear = String.valueOf(Calendar.getInstance().get(Calendar.YEAR)).substring(2,4);
 		String currentMonth = String.valueOf(LocalDate.now().getMonth().getValue());
@@ -85,9 +85,9 @@ public class Xx1 extends DomainEntity {
 			currentDay = "0" + currentDay;
 		}
 		
-		final String day = trozos[1].substring(0,2);
-		final String month = trozos[0].substring(2,4);
-		final String year = trozos[0].substring(0,2);
+		final String day = trozos[2].substring(2,4);
+		final String month = trozos[2].substring(0,2);
+		final String year = trozos[1];
 		
 		res = (year.equals(currentYear))
 			&& (month.equals(currentMonth))

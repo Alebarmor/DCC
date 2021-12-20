@@ -20,11 +20,11 @@
 	<acme:form-textarea code="anonymous.shout.form.label.text" path="text" placeholder="Lorem ipsum!"/>
 	<acme:form-url code="anonymous.shout.form.label.info" path="info"/>
 	
-	<acme:footer-subpanel code="anonymous.xx1">
-		<acme:form-textbox code="anonymous.xx1.form.label.xx2" path="xx1.xx2" placeholder="XXP"/>
-		<acme:form-moment code="anonymous.xx1.form.label.xx3" path="xx1.xx3" placeholder="2000/01/01 00:00"/>
-		<acme:form-money code="anonymous.xx1.form.label.xx4" path="xx1.xx4" placeholder="XXA/XXB/XXC 31592.19"/>
-		<acme:form-checkbox code="anonymous.xx1.form.label.xx5" path="xx1.xx5"/>
+	<acme:footer-subpanel code="anonymous.tolem">
+		<acme:form-textbox code="anonymous.tolem.form.label.name" path="tolem.name" placeholder="ww:yy:mmdd"/>
+		<acme:form-moment code="anonymous.tolem.form.label.deadline" path="tolem.deadline" placeholder="2000/01/01 00:00"/>
+		<acme:form-money code="anonymous.tolem.form.label.budget" path="tolem.budget" placeholder="EUR/USD/GBP 31592.19"/>
+		<acme:form-checkbox code="anonymous.tolem.form.label.important" path="tolem.important"/>
 	</acme:footer-subpanel>
 	
 	<acme:form-submit code="anonymous.shout.form.button.create" action="/anonymous/shout/create"/>

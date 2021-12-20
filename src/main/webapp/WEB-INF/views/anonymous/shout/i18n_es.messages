@@ -12,12 +12,12 @@ anonymous.shout.form.label.author = Autor:
 anonymous.shout.form.label.text = Texto:
 anonymous.shout.form.label.text = Información:
 
-anonymous.xx1 = Xx1
+anonymous.tolem = Tolem
 
-anonymous.xx1.form.label.xx2 = Xe2:
-anonymous.xx1.form.label.xx3 = Xe3:
-anonymous.xx1.form.label.xx4 = Xe4:
-anonymous.xx1.form.label.xx5 = ¿No es importante?:
+anonymous.tolem.form.label.name = Nombre:
+anonymous.tolem.form.label.deadline = Plazo:
+anonymous.tolem.form.label.budget = Presupuesto:
+anonymous.tolem.form.label.important = ¿Es importante?:
 
 anonymous.shout.form.button.create = Gritar
 anonymous.shout.form.button.return = Volver
@@ -25,17 +25,16 @@ anonymous.shout.form.button.return = Volver
 anonymous.shout.list.label.moment = Momento
 anonymous.shout.list.label.author = Autor
 anonymous.shout.list.label.text = Texto
-anonymous.shout.list.label.xx1 = Xx1
+anonymous.shout.list.label.tolem = Tolem
 
 anonymous.shout.form.error.spam = Se ha detectado spam en el texto introducido
-anonymous.xx1.form.error.xx4-currency = Solo podemos aceptar 'XXA', 'XXB' o 'XXC' como símbolos válidos
-anonymous.xx1.form.error.xx4-positive = Solo se aceptan cantidades positivas de xe4
-anonymous.xx1.form.error.xx4-null = El campo de xe4 no debe de estar vacío
+anonymous.tolem.form.error.budget-currency = Solo podemos aceptar 'EUR', 'USD' o 'GBP' como símbolos válidos
+anonymous.tolem.form.error.budget-positive = Solo se aceptan cantidades positivas de presupuesto
+anonymous.tolem.form.error.budget-null = El campo de presupuesto no debe de estar vacío
 
 anonymous.shout.form.error.info-blank = Info no debe estar en blanco
-anonymous.xx1.form.error.xx2-blank = El xe2 no debe estar vacío
-anonymous.xx1.form.error.xx2-duplicated = El xe2 debe ser único
-anonymous.xx1.form.error.xx2-regex = El xe2 debe cumplir el siguiente patrón: XXP; donde las w's representan letras (entre x y y letras de forma que el xe2 sea único), las y's denotan el año actual, las m's el mes actual y las d's el día actual
-anonymous.xx1.form.error.xx3-null = La xe3 no debe estar vacía
-anonymous.xx1.form.error.xx3-week = La xe3 debe ser al menos con una semana después de ahora
-anonymous.xx1.form.error.xx2-date = La fecha del patrón no es la actual
+anonymous.tolem.form.error.name-blank = El nombre no debe estar vacío
+anonymous.tolem.form.error.name-duplicated = El nombre debe ser único
+anonymous.tolem.form.error.deadline-null = El plazo no debe estar vacía
+anonymous.tolem.form.error.deadline-week = El plazo debe ser al menos con una semana después de ahora
+anonymous.tolem.form.error.name-date = La fecha del patrón no es la actual

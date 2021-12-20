@@ -15,14 +15,13 @@ package acme.features.anonymous.shout;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.regex.Pattern;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.configuration.Configuration;
 import acme.entities.shouts.Shout;
-import acme.entities.xx1s.Xx1;
+import acme.entities.tolems.Tolem;
 import acme.framework.components.Errors;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
@@ -39,7 +38,7 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 
 	// AbstractCreateService<Administrator, Shout> interface --------------
 	
-	Xx1 xx1Entity = new Xx1();
+	Tolem tolemEntity = new Tolem();
 
 	@Override
 	public boolean authorise(final Request<Shout> request) {
@@ -93,8 +92,7 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 		final Configuration confEng = listConfigurations.get(0);
 		final Configuration confEsp = listConfigurations.get(1);
 		
-		final Pattern pattern = Pattern.compile("^\\w{2,4}:([0-9]{2}):([0-1][0-9][0-3][1-9])$");
-		final boolean isDuplicated = this.repository.findOneXx1ByXx2(entity.getXx1().getXx2()) != null;
+		final boolean isDuplicated = this.repository.findOneTolemByName(entity.getTolem().getName()) != null;
 		
 		final Date aWeekAfter = new Date(System.currentTimeMillis() + 604800001);
 
@@ -110,24 +108,20 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 			errors.state(request, !entity.getInfo().equals(""), "info", "anonymous.shout.form.error.info-blank");
 		}
 		
-		if (!errors.hasErrors("xx1.xx2")) {
-			errors.state(request, !isDuplicated, "xx1.xx2", "anonymous.xx1.form.error.xx2-duplicated");
+		if (!errors.hasErrors("tolem.name")) {
+			errors.state(request, !isDuplicated, "tolem.name", "anonymous.tolem.form.error.name-duplicated");
 		}
 		
-		if (!errors.hasErrors("xx1.xx2")) {
-			errors.state(request, entity.getXx1().isXx2Current(), "xx1.xx2", "anonymous.xx1.form.error.xx2-date");
+		if (!errors.hasErrors("tolem.name")) {
+			errors.state(request, entity.getTolem().isNameCurrent(), "tolem.name", "anonymous.tolem.form.error.name-date");
 		}
 		
-		if (!errors.hasErrors("xx2")) {
-			errors.state(request, pattern.matcher(entity.getXx1().getXx2()).matches(), "xx2", "anonymous.xx1.form.error.xx2-regex");
+		if (!errors.hasErrors("tolem.deadline")) {
+			errors.state(request, entity.getTolem().getDeadline().after(aWeekAfter), "tolem.deadline", "anonymous.tolem.form.error.deadline-week");
 		}
 		
-		if (!errors.hasErrors("xx1.xx3")) {
-			errors.state(request, entity.getXx1().getXx3().after(aWeekAfter), "xx1.xx3", "anonymous.xx1.form.error.xx3-week");
-		}
-		
-		if (!errors.hasErrors("xx1.xx4")) {
-			errors.state(request, ((entity.getXx1().getXx4().getCurrency().equals("XXA")) || (entity.getXx1().getXx4().getCurrency().equals("XXB")) || (entity.getXx1().getXx4().getCurrency().equals("XXC"))), "xx1.xx4", "anonymous.xx1.form.error.xx4-currency");
+		if (!errors.hasErrors("tolem.budget")) {
+			errors.state(request, ((entity.getTolem().getBudget().getCurrency().equals("EUR")) || (entity.getTolem().getBudget().getCurrency().equals("USD")) || (entity.getTolem().getBudget().getCurrency().equals("GBP"))), "tolem.budget", "anonymous.tolem.form.error.budget-currency");
 		}
 	
 	}
@@ -143,13 +137,13 @@ public class AnonymousShoutCreateService implements AbstractCreateService<Anonym
 		moment = new Date(System.currentTimeMillis() - 1);
 		entity.setMoment(moment);
 		
-		this.repository.save(entity.getXx1());
-		entity.setXx1(entity.getXx1());
+		this.repository.save(entity.getTolem());
+		entity.setTolem(entity.getTolem());
 		
 		this.repository.save(entity);
 
-		this.xx1Entity.setShout(entity);
-		this.repository.save(entity.getXx1());
+		this.tolemEntity.setShout(entity);
+		this.repository.save(entity.getTolem());
 	}
 
 }

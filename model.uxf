@@ -478,12 +478,12 @@ make &gt;</panel_attributes>
       <h>96</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
-Xx1
+Tolem
 --
-+ xx2: String {NotBlank, Pattern(regexp = "XXP")}
-+ xx3: Date {NotNull, Temporal(TIMESTAMP)}
-+ xx4: Money {NotNull, Valid}
-+ xx5: boolean {NotNull}</panel_attributes>
++ name: String {NotBlank, Pattern(regexp = "w{2,4}:yy:mmdd")}
++ deadline: Date {NotNull, Temporal(TIMESTAMP)}
++ budget: Money {NotNull, Valid}
++ important: boolean {NotNull}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
